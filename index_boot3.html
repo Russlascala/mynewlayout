@@ -62,6 +62,31 @@
                 <li>
                     <a href="contact.html">Contact</a>
                 </li>
+                        <li class="dropdown">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown
+                                <span class="caret"></span>
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li>
+                                    <a href="#">Action</a>
+                                </li>
+                                <li>
+                                    <a href="#">Another action</a>
+                                </li>
+                                <li>
+                                    <a href="#">Something else here</a>
+                                </li>
+                                <li role="separator" class="divider"></li>
+                                <li>
+                                    <a href="#">Separated link</a>
+                                </li>
+                                <li role="separator" class="divider"></li>
+                                <li>
+                                    <a href="#">One more separated link</a>
+                                </li>
+                            </ul>
+                        </li>
+                
             </ul>
             <!-- Mobile Navigation Elements -->
             <span data-toggle="collapse" data-target="#navDropdown" class="navmenuTitle">Menu</span>
@@ -105,7 +130,7 @@
     <div class="mainContent">
         <!-- Hero image -->
         <div class="heroImg">
-            <img src="imgs/bannerimg/1.png" class="img-responsive" id="imgBanner"alt="">
+            <img src="imgs/bannerimg/1.png" class="img-responsive" id="imgBanner" alt="">
         </div>
         <!-- tagline text -->
         <div class="col-md-12" id='tagline_section'>
@@ -137,14 +162,14 @@
         </div>
 
         <!-- Insurances Accordion section -->
-        <div class="accordColor" style="float:left; width:100%">
+        <div class="accordContent" style="float:left; width:100%">
             <div class="width1200">
                 <div class='container-fluid' id="accordIns">
                     <div class="row" >
-                        <div class="col-lg-4 col-md-12 col-sm-12">
+                        <div class="col-lg-12" style="padding:0">
                             <h2>Accepted Insurances</h2>
                         </div>
-                        <div class="accordList col-lg-8 col-md-12 col-md-12" >
+                        <div class="accordList col-lg-12" >
                             <div class="row noMargin">
                                 <ul class="txtDefault_byState">
                                     <li class="col-xxs-12 col-xs-12 col-sm-6 col-md-6 accordion-list">State Insurance 001</li>
@@ -199,18 +224,18 @@
                         <h4>Payment</h4>
                         
                     <p>My office accepts the following methods of payment for co-payments, deductibles and services that are not covered by insurance:</p>
-
+                        <div>
                         <div class="row" id ="cards">
                             <div class='col-xs-12 col-sm-6 col-md-6'>
-                                <div class="cardImg"><img src="imgs/paymentOpt_amex.png" alt=""><span class="cardTxt"> American Express</span></div>
-                                <div class="cardImg"><img src="imgs/paymentOpt_discover.png" alt=""><span class="cardTxt"> Discover</span></div>
+                                <div class="cardImg"><img src="imgs/paymentOpt_amex.png" alt=""><span class="cardTxt"> &nbsp;&nbsp; American Express</span></div>
+                                <div class="cardImg"><img src="imgs/paymentOpt_discover.png" alt=""><span class="cardTxt"> &nbsp;&nbsp; Discover</span></div>
                             </div>
                             <div class='col-xs-12 col-sm-6 col-md-6'>
-                                <div class="cardImg"><img src="imgs/paymentOpt_master.png" alt=""><span class="cardTxt"> Mastercard</span></div>
-                                <div class="cardImg"><img src="imgs/paymentOpt_visa.png" alt=""><span class="cardTxt"> Visa</span></div>
+                                <div class="cardImg"><img src="imgs/paymentOpt_master.png" alt=""><span class="cardTxt"> &nbsp;&nbsp; Mastercard</span></div>
+                                <div class="cardImg"><img src="imgs/paymentOpt_visa.png" alt=""><span class="cardTxt"> &nbsp;&nbsp; Visa</span></div>
                             </div>
                         </div>
-                
+                    </div>
                     </div>
                     <div class="col-sm-12 col-md-4 col-lg-4" id="buttons">
                         <div class="col-xs-12 col-sm-4 col-md-12 buttonappt"><img src="imgs/btn_bookappt.jpg" alt=""  class="btnimg"></div>
@@ -222,14 +247,15 @@
         </div>
 
         <!-- Patient Edu Accordion section -->
-        <div class="accordColor" style="float:left; width:100%">
+        <div>
+        <div class="accordContent" style="float:left; width:100%">
             <div class="width1200">
                 <div class='container-fluid' id="accordEdu">
                     <div class="row">
-                        <div class="col-lg-4 col-md-12 col-sm-12">
+                        <div class="col-lg-12" style="padding:0">
                             <h2>Patient Education</h2>
                         </div>
-                        <div class="accordList col-lg-8 col-md-12 col-md-12">
+                        <div class="accordList col-lg-12">
                             <div class="row noMargin">
                                 <ul class="txtDefault_bySpecialty">
                                     <li class="col-xxs-12 col-xs-12 col-sm-6 col-md-6 accordion-list">
@@ -458,7 +484,7 @@
                                                     <input type="checkbox" name="consent" value="consent" required="required" >
                                                 </th>
                                                 <td>
-                                                    <p>I agree to allow my healthcare provider or facility staff to reply to the email address indicated on this form, and to
+                                                    <p style="font-size:12px">I agree to allow my healthcare provider or facility staff to reply to the email address indicated on this form, and to
                                                     forward or share the information contained in this form, including any <b>Personal Health Information (PHI)</b>, with other
                                                     health professionals or associated staff using non-secure electronic communication methods such as email.</p>
                                                 </td>
@@ -468,7 +494,7 @@
                                 </div>
                                 <div class="row">
                                     <div class="col-md-12">
-                                        <input type="submit" id="sendMsg" class="btn btn-success btn-send" value="Send Message">
+                                        <input type="submit" id="sendMsg" class="btn btn-success btn-send" value="SEND MESSAGE">
                                     </div>
                                 </div>
                             </div>
@@ -510,11 +536,6 @@
                     </ul>
                 </div>
             </div>
-            <div class="col-lg-12 footnote">
-                Copyright © 2018 by
-                <strong>[practiceName]</strong> and
-                <strong>Dr. Leonardo Interactive Webservices, LLC</strong>. All Rights Reserved.
-            </div>
             <div class="footmenuSocial">
                 <a href="#">
                     <img src="imgs/social_facebook.png" width="36" height="36" class="iconSocial">
@@ -534,6 +555,12 @@
                 <a href="#">
                     <img src="imgs/social_instagram.png" width="36" height="36" class="iconSocial">
                 </a>
+            </div>
+            <br>
+            <div class="col-lg-12 footnote">
+                Copyright © 2018 by
+                <strong>[practiceName]</strong> and
+                <strong>Dr. Leonardo Interactive Webservices, LLC</strong>. All Rights Reserved.
             </div>
         </footer>
     </div> <!--Closing mainContent div-->

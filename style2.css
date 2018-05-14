@@ -80,6 +80,7 @@
   .navbar li:last-child::after {
     content:none;
   }
+
   .navbar .glyphicon {
     display:none;
   }
@@ -129,16 +130,11 @@
 
 #tagline_section{
   text-align: center;
-  font-size: 35px;
+  font-size: 24px;
   font-weight: bold;
   box-shadow: 5px 5px 30px #888888;
 }
 
-
-/* Main Content after nav 
-.mainContent {
-  
-}*/
  h2 {
   margin-bottom: 40px;
 }
@@ -180,24 +176,25 @@
 
 /* Insurance and patient edu accordion list sections */
 #accordIns { 
+  text-align: center;
+}
+
+.accordContent {
   padding-left: 60px;
   padding-right: 60px;
   padding-top: 50px;
   padding-bottom: 50px;
-  /*margin-top: 50px;
-  margin-bottom: 50px;*/
-  max-width: 100%;; 
-  text-align: center;
-}
-
-.accordColor {
+  margin-top: 50px;
+  margin-bottom: 50px;
+  max-width: 100%; 
   background-color: #E5E5E5;
 }
 
 
+
 #accordIns h2 {
   text-align: left;
-  padding-bottom:5px;
+  
 }
 
 #accordIns li {
@@ -265,20 +262,12 @@
 
 /* Patient Edu accordion list section */
 #accordEdu {
-  padding-left: 60px;
-  padding-right: 60px;
-  padding-top: 50px;
-  padding-bottom: 50px;
-  /*margin-top: 50px;
-  margin-bottom: 50px;*/
-  max-width: 100%;; 
-  background-color: #E5E5E5;
   text-align: center;
   
 }
 #accordEdu h2 {
   text-align: left;
-  padding-bottom:3%;
+  
 }
 
 #accordEdu li {
@@ -421,7 +410,7 @@ footer a {
 .footmenuSocial {
   display:block;
   width:280px;
-  margin:0 auto;
+  margin:30px auto;
 }
   .footmenuSocial .iconSocial {
     border:2px solid #fff;
@@ -448,33 +437,30 @@ footer a {
 
   /* about content desktop*/
   #aboutContent {
-    padding-left: 30px;
-    padding-right: 30px;
+    padding-left: 60px;
+    padding-right: 60px;
    
   }
 
-  .accordList {
-    margin-top:55px;
-  }
 
-  /*Insurance accordion list section */
+  /*Insurance accordion list section
   #accordIns {
-  padding-left: 30px;
-  padding-right: 30px;
-  }
+  padding-left: 60px;
+  padding-right: 60px;
+  } */
 
   /*office policies section desktop*/
   #offPolContent {
-    padding-left: 30px;
-    padding-right: 30px;
+    padding-left: 60px;
+    padding-right: 60px;
   
   }
 
-  /*patient edu accordion list section */
+  /*patient edu accordion list section 
   #accordEdu {
-  padding-left: 30px;
-  padding-right: 30px;
-  }
+  padding-left: 60px;
+  padding-right: 60px;
+  }*/
 
   /* office policies section */
   #buttons{
@@ -484,14 +470,14 @@ footer a {
 
   /*locations section desktop*/
   #locationContent {
-    padding-left: 30px;
-    padding-right: 30px;
+    padding-left: 60px;
+    padding-right: 60px;
   }
 
   /* Contact section desktop*/
   #simpleContact {
-    padding-left: 30px;
-    padding-right: 30px;
+    padding-left: 60px;
+    padding-right: 60px;
   }
   #phiWidth {
   width: 75%;
@@ -500,6 +486,7 @@ footer a {
 }
 
 /* Landscape Tablet */
+/*_______________________--------------------------------__________________________*/
 @media (max-width: 1199px) {
 
 /* === Navigation === */
@@ -614,25 +601,61 @@ footer a {
     position:absolute;
     left:160px;
   }
+
+    /*  insurance accord section mobile 
+  #accordIns {
+    padding-left: 60px;
+    padding-right: 60px;
+  }*/
+
+  /* Office policies mobile*/
+  #offPolContent {
+    padding-left: 60px;
+    padding-right: 60px;
+  }
 }
 
+/*_______________________--------------------------------__________________________*/
 @media (max-width: 991px) {
+
+
   #buttons{
     margin-top:35px;
   }
+
+    #practiceTxt {
+    font-size:26px;
+  }
+  #navPhone {
+    font-size:16px;
+  }
+
+  #taglineTxt{
+    font-size: 14px;
+  }
+
 }
 
 
 
 /* Landscape Mobile */
+/*_______________________--------------------------------__________________________*/
 @media (max-width: 767px) {
 
   practiceTxt {
-    font-size: 29px;
+    font-size: 23px;
   }
 
   #taglineTxt{
     font-size: 14px;
+  }
+
+    #navPhone {
+    font-size:16px;
+    text-align: center;
+    padding: 20px 0 0;
+    font-size: 16px;
+    padding-right: 0px;
   }
 
   /* === Navigation === */
@@ -660,11 +683,36 @@ footer a {
   }
 }
 
+/*_______________________--------------------------------__________________________*/
 /* Midsize Responsive Troubleshooting */
 @media (max-width: 639px) {
-  
+  #practicelogo{
+    height: 90px;
+  }
+
+  #navPhone{
+    text-align: center;
+    padding: 20px 0 0;
+    font-size: 16px;
+    padding-right: 0px;
+  }
+
+
+  #navLogo{
+    padding:25px 0 0;
+    margin-right:10px;
+  }
+
+  #headingTxt {
+    padding: 35px 0 0;
+  }
+
   #practiceTxt {
-    font-size: 26px;
+    font-size: 24px;
+  }
+
+  #taglineTxt{
+    font-size: 14px;
   }
 
   footer {
@@ -698,7 +746,7 @@ footer a {
   }
 
   #headingTxt {
-    padding: 25px 0 0;
+    padding: 35px 0 0;
   }
 
   #practiceTxt {
@@ -724,11 +772,15 @@ footer a {
   }
   
   /*  insurance accord section mobile */
-  #accordIns {
+  .accordContent {
+    margin-top: 5px;
     padding-left: 30px;
     padding-right: 30px;
   }
 
+    #accordContent h2 {
+      text-align:left;
+  }
   /* Office policies mobile*/
   #offPolContent {
     padding-left: 30px;
@@ -740,11 +792,11 @@ footer a {
   }
 
 
-  /*  patient edu accord section mobile */
+  /*  patient edu accord section mobile
   #accordEdu {
     padding-left: 30px;
     padding-right: 30px;
-  }
+  } */
 
   #offhrs{
     margin-top: 30px;
@@ -774,6 +826,7 @@ footer a {
 
 }
 
+/*_______________________--------------------------------__________________________*/
 @media only screen and (max-width:374px) {
   #practiceTxt {
     font-size:16px;
