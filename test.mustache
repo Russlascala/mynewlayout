@@ -1,0 +1,412 @@
+<!DOCTYPE html>
+<html lang="en" {{#Editable}} ng-app="editorApp" {{/Editable}}>
+	<head>
+		<title>{{GetTitle}}</title>
+		{{{getDescription}}}
+		{{{getKeywords}}}
+		<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.css">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	      {{#GoogleWebmaster}}
+	      {{{GoogleWebmaster}}}
+	      {{/GoogleWebmaster}}
+	      {{#BingWebmaster}}
+	      {{{BingWebmaster}}}
+	      {{/BingWebmaster}}
+
+		{{{Styles}}}
+	</head>
+	<body {{#Editable}} ng-controller="editorController" {{/Editable}}>
+		<div class="container-fluid top-nav">
+			<div class="nav-container">
+				<nav class="full-header navbar navbar-inverse navbar-static-top marginBottom-0" role="navigation" style="z-index: 100000;">
+					<div class="text-center nav-bg">
+						<div class="navbar-header">
+							<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-collapse-1" style="border-color:transparent;">
+								<span class="icon-bar"></span>
+								<span class="icon-bar"></span>
+								<span class="icon-bar"></span>
+							</button>
+							{{> responsive_quick_links}}
+						</div>
+
+						<div class="collapse navbar-collapse" id="navbar-collapse-1">
+							<ul class="nav navbar-nav custom-nav">
+								{{{GetNavigation}}}
+							</ul>
+						</div>
+					</div>
+				</nav>
+			</div>
+		</div>
+		<div class="container-fluid blank-bio-spce" style="background-image: url('{{GetProviderBackgroundImageURL}}');">
+			<div class="container">
+				<div id="namecard">
+					<div class="col-sm-3 dpimg">
+						<div id="profile-portrait" class="center-block">
+							<img id="profile-pic" alt="{{GetPracticeName}}" src="{{GetDoctorPicImageSrc}}" class="img-responsive"/>
+						</div>
+						<div class="scl_table center-block">
+							{{#Editable}}
+							{{^GetSocialWidgets}}
+								<div class="scl_button col-xs-2 col-sm-4 col-md-2 col-lg-2 center-block"><img src="https://sitebuilder.dr-leonardo.com/socialicons/facebook_multicolor.png" width="34" height="34"></div>
+								<div class="scl_button col-xs-2 col-sm-4 col-md-2 col-lg-2 center-block"><img src="https://sitebuilder.dr-leonardo.com/socialicons/googleplus_multicolor.png" width="34" height="34"></div>
+								<div class="scl_button col-xs-2 col-sm-4 col-md-2 col-lg-2 center-block"><img src="https://sitebuilder.dr-leonardo.com/socialicons/linkedin_multicolor.png" width="34" height="34"></div>
+								<div class="scl_button col-xs-2 col-sm-4 col-md-2 col-lg-2 center-block"><img src="https://sitebuilder.dr-leonardo.com/socialicons/twitter_multicolor.png" width="34" height="34"></div>
+								<div class="scl_button col-xs-2 col-sm-4 col-md-2 col-lg-2 center-block"><img src="https://sitebuilder.dr-leonardo.com/socialicons/youtube_multicolor.png" width="34" height="34"></div>
+								<div class="scl_button col-xs-2 col-sm-4 col-md-2 col-lg-2 center-block"><img src="https://sitebuilder.dr-leonardo.com/socialicons/instagram_multicolor.png" width="34" height="34"></div>
+							{{/GetSocialWidgets}}
+							{{/Editable}}
+
+							{{{GetSocialWidgets}}}
+							<br><br>
+						</div>
+
+					</div>
+					<div class="col-sm-9 col-md-9 main_info">
+						<div id="nameplate" >
+							<div class="row">
+								<h1 class="doc-name">{{GetMainDoctorName}}</h1>
+								<div class="col-sm-8 col-md-8">
+									<h3 class="doc-practicename">{{GetPracticeName}}</h3>
+									<h4 class="spe">{{GetDiscipline}}</h4>
+								</div>
+								<div class="col-sm-4 col-md-4">
+									{{#GetPracticeLogoURL}}
+									<img id="practicelogo" src="{{GetPracticeLogoURL}}" align="center" class="logo center-block"/>
+									{{/GetPracticeLogoURL}}
+								</div>
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-xs-12 col-sm-6 col-md-6 icn_address">
+								<div class="adr_bx center-block">
+									<div class="col-xs-1 col-sm-2 col-md-2 col-lg-2">
+										<a href="{{GetLocationsLink}}" class="btn-circle btn btn-lg bx-grey center-block">
+											<img width=16 height=16 src="{{GetTemplateBasePath}}assets/images/locations_white_icon.png" />
+										</a>
+									</div>
+									<div class="col-xs-11 col-sm-10 col-md-10 col-lg-10 icn_adr">
+										<p style="word-break:all">
+										{{GetPracticeName}}<br />
+										{{#GetAddressLine2}}{{GetAddressLine2}}<br/>{{/GetAddressLine2}}
+										{{GetAddressLine1}}<br />
+										{{GetCity}}, {{GetState}} {{GetZip}}<br>
+										<span class="main-location">* Primary Location</span>
+										</p>
+									</div>
+								</div>
+							</div>
+							<div class="col-xs-12 col-sm-5 col-md-5">
+								<div class="phn_bx center-block">
+									<div class="col-xs-1 col-sm-2 col-md-2 col-lg-2">
+										<a href="tel:{{GetMainPhone}}" class="btn-circle btn btn-lg icn_ph bx-grey">
+											<img width=16 height=16 src="{{GetTemplateBasePath}}assets/images/phone_white_icon.png" />
+										</a>
+									</div>
+									<div class="col-xs-11 col-sm-10 col-md-10 col-lg-10 icn_ph">
+										<p><span class="phone_number1"><b><a href="tel:{{GetMainPhone}}">{{GetMainPhone}}</a></b> </span> (Main Phone)</p>
+										{{#GetFaxPhone}}<p><span class="phone_number2"><a href="tel:{{GetFaxPhone}}">{{GetFaxPhone}}</a></span> (Fax)</p>{{/GetFaxPhone}}
+										{{^IsDoctorCom}}
+										<div class="row" id="apptAndVcardRow">
+											<div class="col-md-6">
+												{{{GetRequestAppointment}}}
+											</div>
+											<div class="col-md-6">
+												<a href="{{GetPhysicianVCardUrl}}" target="_blank">
+													<img src="{{GetTemplateBasePath}}assets/images/vcardDownload.png" />
+												</a>
+											</div>
+										</div>
+										<style>
+											#apptAndVcardRow img{
+												width:100%;
+												margin:-5px;
+												padding:8px;
+											}
+										</style>
+										{{/IsDoctorCom}}
+										{{#IsDoctorCom}}
+												{{{GetRequestAppointment}}}
+												<br>
+												<a href="{{GetPhysicianVCardUrl}}" target="_blank">
+													<img src="{{GetTemplateBasePath}}assets/images/vcardDownload.png" style="width:70%"/>
+												</a>
+										{{/IsDoctorCom}}
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="container-fluid">
+					<div class="container bx_wrap bx-tp-spce">
+						<div class="col-xs-12 col-sm-4 col-md-4 col-lg-3">
+							<div class="add_info">
+								<table cellpadding="0" cellspacing="0" border="0" style="width: 100%">
+									<tr>
+										<td><p><b>Gender:</b> {{GetGenderInitial}}</p></td>
+										<td style="text-align:right"><p><b>New Patients:</b> Yes</p></td>
+									</tr>
+								</table><hr>
+								<p><b>Languages:</b>&nbsp;{{GetPhysicianLanguages}}</p>
+								{{#HasWebsites}}
+                                    <hr>
+                                    <p><b>Website(s):</b><br>
+								{{/HasWebsites}}
+								{{#GetPhysicianWebsites}}
+									<a href="{{.}}" target="_blank">{{.}}</a><br>
+								{{/GetPhysicianWebsites}}
+								</p>
+							</div>
+						</div>
+					<div class="col-xs-12 col-sm-7 col-sm-offset-1 col-md-offset-1 col-md-7 col-lg-8 txt_bx_right education">
+						<div class="quick_links">
+							<ul>
+								{{#GetReviewWidget}}<li class="col-ql"><a href="#reviewSection"><img src="{{GetTemplateBasePath}}assets/images/quick_link_reviews_icon.png" />Reviews</a></li>{{/GetReviewWidget}}
+								<li class="col-ql"><a href="#locationSection"><img src="{{GetTemplateBasePath}}assets/images/quick_link_location_icon.png" />Locations</a></li>
+								<li class="col-ql"><a href="#insuranceSection"><img src="{{GetTemplateBasePath}}assets/images/quick_link_insurance_icon.png" />Insurances</a></li>
+								<li class="col-ql"><a href="#credentialSection"><img src="{{GetTemplateBasePath}}assets/images/quick_link_credentials_icon.png" />Credentials</a></li>
+								<li class="col-ql"><a href="#educationSection"><img src="{{GetTemplateBasePath}}assets/images/quick_link_education_icon.png" />Education</a></li>
+							</ul>
+						</div>
+						<div class="row-fluid" id="mainlocationsmap"></div>
+					</div>
+				</div>
+		</div>
+		<div class="container-fluid">
+			<div class="container bx_wrap bx-tp-spce">
+				<div class="col-xs-12 col-sm-3 lft_heading"> About </div>
+				<div class="col-xs-12 col-sm-7 col-sm-offset-2 col-md-offset-1 col-md-8 txt_bx_right education">
+					<div data-type="biography" placeholder="Enter Biography Here..." {{#Editable}}contenteditable="true"{{/Editable}}>
+						{{#GetBiography}}{{{GetBiography}}}{{/GetBiography}}
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="container-fluid">
+			<div class="container bx_wrap bx-tp-spce" id="educationSection">
+				<div class="col-xs-12 col-sm-3 lft_heading"> Education </div>
+				<div class="col-xs-12 col-sm-7 col-sm-offset-2 col-md-offset-1 col-md-8 txt_bx_right education" >
+					<div data-type="medschool" {{#Editable}}contenteditable="true"{{/Editable}}>
+							{{^GetMedschool}}<li>Enter Your Medical School History Here</li>{{/GetMedschool}}
+							{{#GetMedschool}}{{{GetMedschool}}}{{/GetMedschool}}
+					</div>
+				</div>
+			</div>
+		</div>
+		{{#GetCertifications}}
+		<div class="container-fluid">
+			<div class="container bx_wrap bx-tp-spce" id="credentialSection">
+				<div class="col-xs-12 col-sm-3 lft_heading"> Certifications </div>
+				<div class="col-xs-12 col-sm-7 col-sm-offset-2 col-md-offset-1 col-md-8 txt_bx_right education">
+					<div data-type="board_certificates" {{#Editable}}contenteditable="true"{{/Editable}}>
+						{{{GetCertifications}}}
+					</div>
+				</div>
+			</div>
+		</div>
+		{{/GetCertifications}}
+		<div class="container-fluid">
+			<div class="container bx_wrap bx-tp-spce">
+				<div class="col-xs-12 col-sm-3 lft_heading"> Affiliations </div>
+				<div class="col-xs-12 col-sm-7 col-sm-offset-2 col-md-offset-1 col-md-8 txt_bx_right education">
+					<div data-type="residency" {{#Editable}}contenteditable="true"{{/Editable}}>
+							{{#GetResidency}}{{{GetResidency}}}{{/GetResidency}}
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="container-fluid">
+			<div class="container bx_wrap bx-tp-spce" id="insuranceSection">
+				<div class="col-xs-12 col-sm-3 lft_heading" id="insuranceHeading"> Accepted Insurances </div>
+				<div class="col-xs-12 col-sm-7 col-sm-offset-2 col-md-offset-1 col-md-8 txt_bx_right insurance">
+					<div data-type="insurance" >
+						{{^GetInsurances}}Contact my office for a list of accepted insurance plans.{{/GetInsurances}}
+						<ul>
+							{{#GetInsurances}}<li>{{insurance_name}}</li>{{/GetInsurances}}
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="container-fluid">
+			<div class="container bx_wrap bx-tp-spce" id="paymentSection">
+				<div class="col-xs-12 col-sm-3 lft_heading"> Payment Options </div>
+				<div class="col-xs-12 col-sm-7 col-sm-offset-2 col-md-offset-1 col-md-8 txt_bx_right payment">
+					<div class="row">
+						{{{GetSiteFinances}}}
+					</div>
+				</div>
+			</div>
+		</div>
+		{{#GetReviewWidget}}
+		<div class="container-fluid">
+			<div class="container bx_wrap bx-tp-spce" id="reviewSection">
+				<div class="col-xs-12 col-sm-3 lft_heading"> Reviews </div>
+				<div class="col-xs-12 col-sm-7 col-sm-offset-2 col-md-offset-1 col-md-8 txt_bx_right">
+					<div class="row">
+						{{{GetReviewWidget}}}
+					</div>
+				</div>
+			</div>
+		</div>
+		{{/GetReviewWidget}}
+		<div class="container-fluid">
+			<div class="container bx_wrap bx-tp-spce lction-wrap no-bdr" id="locationSection">
+				<div class="col-xs-12 col-sm-3 lft_heading">Locations </div>
+				<div class="col-xs-12 col-sm-7 col-sm-offset-2 col-md-offset-1 col-md-8 txt_bx_right locations">
+					{{# GetLocations}}
+					<div class="row locationContainer">
+						<div class="col-xs-10 col-xs-offset-1 col-sm-7 col-sm-offset-0 col-md-7 col-md-offset-0 col-lg-offset-0 location-info">
+							<h2 class="lction-pracname">{{practice_name}}</h2>
+							{{addressline1}}<br>
+							{{city}}, {{state}} {{zipcode}}<br><br>
+							<b>Phone:</b>&nbsp;<a href="tel:{{office_phone}}">{{office_phone}}</a></br>
+							{{#fax}}<b>Fax:</b>&nbsp;<a href="tel:{{.}}">{{.}}</a>{{/fax}}
+						</div>
+						<div class="col-xs-12 col-sm-5 col-md-5">
+							<table class="table locationHoursTable">
+								<tr><td style="text-align:right">Sunday</td><td style="padding-left:25px">{{sunday}}</td></tr>
+								<tr><td style="text-align:right">Monday</td><td style="padding-left:25px">{{monday}}</td></tr>
+								<tr><td style="text-align:right">Tuesday</td><td style="padding-left:25px">{{tuesday}}</td></tr>
+								<tr><td style="text-align:right">Wednesday</td><td style="padding-left:25px">{{wednesday}}</td></tr>
+								<tr><td style="text-align:right">Thursday</td><td style="padding-left:25px">{{thursday}}</td></tr>
+								<tr><td style="text-align:right">Friday</td><td style="padding-left:25px">{{friday}}</td></tr>
+								<tr><td style="text-align:right">Saturday</td><td style="padding-left:25px">{{saturday}}</td></tr>
+							</table>
+						</div>
+					</div>
+					<div class="row locationmaps map_border" id="divmap{{id}}" style="width: 100%; height: 100%;"></div>
+					<hr>
+					<br>
+					{{/GetLocations}}
+				</div>
+			</div>
+			{{> providerfooter}}
+			{{> providerfloatingdock}}
+			<!--[if IE 6]> <div id="ie6alert"><p>You are currently viewing this website in Internet Explorer 6. To enhance your browsing experience, please upgrade to a more current browser such as <a href="http://www.mozilla.com/firefox" target="_blank" style="color:#E45B0A">Firefox</a>, <a href="http://www.apple.com/safari/" target="_blank" style="color:#3E9FDA">Safari</a> or update to <a href="http://www.microsoft.com/windows/Internet-explorer" target="_blank" style="color:#B4D2EF">Internet Explorer 9</a>.  Click on the browser of your choice to upgrade now.</p>  </div> <![endif]-->
+			<!--[if IE 7]>  <div id="ie6alert"> <p>
+			You are currently viewing this website in Internet Explorer 7. To enhance your browsing experience, please upgrade to a more current browser such as <a href="http://www.mozilla.com/firefox" target="_blank" style="color:#E45B0A">Firefox</a>, <a href="http://www.apple.com/safari/" target="_blank" style="color:#3E9FDA">Safari</a> or update to <a href="http://www.microsoft.com/windows/Internet-explorer" target="_blank" style="color:#B4D2EF">Internet Explorer 9</a>.  Click on the browser of your choice to upgrade now.</p> </div><![endif]-->
+		{{#Scripts}}
+		<script type="text/javascript"  src="{{src}}"></script>
+		{{/Scripts}}
+		{{{FooterAssets}}}
+			{{#Editable}}
+			<script type="text/javascript">
+				var template_id = "{{TemplateID}}";
+				var pauseslideshow = null;
+
+				var MN = window.MN || {
+					user_id                : "{{ UserID }}",
+					base_url               : "{{ base_url }}",
+					site_url               : "{{ user_site_url }}",
+					site_id                : "{{ site_id }}",
+					template_id            : "{{ template_id }}",
+					leonardo_image_library : "{{ getLeonardoImageLibraryEndpoint }}",
+					page_id                : "{{ page_id }}",
+					build_type			   : "{{buildtype}}",
+					editor : true
+
+				};
+
+			        </script>
+
+			        <!-- Include Editor if editable flag is on -->
+			        {{> editor}}
+			        {{> image_editor}}
+			{{/Editable}}
+			{{> navigation_jquery}} 
+
+			<script src="https://maps.google.com/maps/api/js?key={{GetGoogleMapEmbedKey}}"></script>
+			<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/gmaps.js/0.4.24/gmaps.min.js"></script>
+			<script type="text/javascript">
+						var locations,physician,locationCoordinates;
+						var mapWithAllMarkers;
+						var locations = {{{GetLocationJson}}}
+						var locationCoordinates = [];
+						var physicians = {{{GetPhysiciansJson}}}
+						var physicianProfileImage = '{{GetDoctorPicImageSrc}}';
+				$( document ).ready(function() {
+					//Reset Maps Size if view port is less than 767
+					var mapSize = 760;
+					 if($(window).width() < 767) {
+						mapSize = 360;
+					 }
+						var themecolor = $(".bx-grey").css("background-color");
+						$(".btn-circle").css("background-color",themecolor);
+						$(".main-location").css("color",themecolor);
+						//Remove last hr in location list
+						$("#locationSection hr:last").remove()
+
+						var gmapUrl;
+						mapWithAllMarkers = null;
+						for(var i in locations){
+							var address = locations[i].addressline1 + "," + locations[i].city + "," + locations[i].state +" " + locations[i].zipcode;
+							$.ajax({
+								url:"https://maps.googleapis.com/maps/api/geocode/json?address="+address+"&sensor=false",
+								type: "POST",
+								indexValue:i,
+								success:function(res){
+									var lat = res.results[0].geometry.location.lat;
+									var lng = res.results[0].geometry.location.lng;
+									var location = locations[this.indexValue];
+									/*	var map = new GMaps({
+										el: '#divmap'+location.id,
+										lat:lat,
+										lng:lng,
+										}).addMarker({
+										lat:lat,
+										lng:lng,
+										title:location.practice_name
+										});*/
+
+									var url = GMaps.staticMapURL({
+										size:[mapSize,220],
+										lat:lat,lng:lng,
+										zoom:15,
+										markers: [
+										{ lat: lat, lng:lng }
+										]
+									})
+									url += "&key=AIzaSyDHDG0nWlmryNPxUkdo5wp_iFCaE4DhTy0"
+									$('<img/>').css({"width":"100%","height":"270px"}).attr('src',url).appendTo("#divmap"+location.id)
+									gmapUrl = $("<a>").attr("href","http://maps.google.com/?ll=" + lat +","+lng).attr("target","_blank");
+
+									$("#divmap"+location.id + " img").wrap(gmapUrl);
+									locationCoordinates.push({'lat':lat,'lng':lng, title:location.practice_name});
+									if( (locations.length - 1) == parseInt(this.indexValue) ) {
+										/*	mapWithAllMarkers = new GMaps({
+											el: '#mainlocationsmap',
+											lat:lat,
+											lng:lng
+											});*/
+										var url = GMaps.staticMapURL({
+											size:[mapSize,220],
+											lat:lat,lng:lng,
+											zoom: 8,
+											markers: locationCoordinates
+										})
+										url += "&key=AIzaSyDHDG0nWlmryNPxUkdo5wp_iFCaE4DhTy0"
+										gmapUrl = $("<a>").attr("href","http://maps.google.com/?ll=" + lat +","+lng).attr("target","_blank");
+										var img = $('<img/>').css({"width":"100%","height":"220px"}).addClass('map_border').attr('src',url);
+
+										img.appendTo("#mainlocationsmap");
+										$("#mainlocationsmap img").wrap(gmapUrl);
+										/*	for(x in locationCoordinates){
+											mapWithAllMarkers.addMarker(locationCoordinates[x]);
+											}*/
+									}
+								}
+							});
+
+						}
+				});
+			</script>
+			{{> bkappointment}}
+			{{> vcarddownload}}
+	{{{GetGoogleTrackingCode}}}</body>
+</html>
