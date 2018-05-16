@@ -1,9 +1,11 @@
 @mainNavFooter: #000; //colorA
-@mainNavFooterTxt: #fff; //colorA
+@mainNavFooterTxt: #fff; //colorA1
+
+@bottomNav: #cccccc; // colorB MAIN THEME COLOR
+@bottomTxt: #000; // colorB MAIN THEME COLOR
 
 
 /* navigation */
-
 .width1200{
   max-width: 1200px;
   margin-left: auto;
@@ -41,7 +43,6 @@
   font-size:16px;
 }
 
-
 #phoneNums{
   padding: 25px;
 }
@@ -63,8 +64,8 @@
   width: 100%;
   height: 40px;
   min-height:40px !important;
-  background-color: #cccccc; /* Light Theme Color 2 */
-  color:#000;
+  background-color: @bottomNav; /* Light Theme Color 2 */
+  color: @bottomTxt;
   border-radius:0 !important;
   margin-bottom:0 !important;
   box-shadow: 5px 5px 30px #888888;
@@ -438,8 +439,8 @@ td {
 
 footer {
   width:100%;
-  background-color:#000;
-  color:#fff;
+  background-color: @mainNavFooter;
+  color: @mainNavFooterTxt;
   font-family:'Open Sans', sans-serif;
   font-size:16px;
   padding:40px 0 30px;
