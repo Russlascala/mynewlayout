@@ -1,0 +1,906 @@
+
+/* navigation */
+
+.width1200{
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+}
+#topNav {
+  width:100%; 
+  height:180px; 
+  background-color: #000;
+}
+
+/* Header above nav */
+#practicelogo{
+  height: 120px;
+}
+
+#navLogo{
+  float:left; 
+  padding:25px;
+}
+#headingTxt {
+  padding:50px 0 0;
+}
+#practiceTxt{
+  color:#fff; /* Lightest Theme color 03*/
+  margin:0; 
+  font-weight:bold;
+  word-wrap:break-word;
+}
+/* Tagline section for practice*/
+#taglineTxt{
+  color:#fff; /* Lightest Theme color 03*/
+  padding-top:5px;
+  margin:0;
+  font-size:16px;
+}
+#navPhone {
+  color:#fff;  /* Lightest Theme color 03*/
+  text-align: right;
+  padding:50px 0; 
+  font-size:18px; 
+  font-weight:bold; 
+  letter-spacing:1px; 
+  padding-right:25px;
+}
+.fa, .fas {
+  font-size: 125%;
+}
+
+.navbar {
+  width: 100%;
+  height: 40px;
+  min-height:40px !important;
+  background-color: #cccccc; /* Light Theme Color 2 */
+  color:#000;
+  border-radius:0 !important;
+  margin-bottom:0 !important;
+  box-shadow: 5px 5px 30px #888888;
+
+}
+  .navbar ul {
+    list-style-type:none;
+    text-align:center;
+    margin-top:0;
+  }
+  .navbar li {
+    font-family: 'Open Sans', sans-serif;
+    font-size:14px;
+    color:#000;
+    display:inline-block;
+    text-transform:uppercase;
+    padding-left:15px;
+  }
+  .navbar li::after {
+    content:"|";
+    font-size:22px;
+    margin-left:15px;
+    margin-right:0;
+  }
+
+  .navbar li:last-child::after {
+    content:none;
+  }
+
+  .navbar .glyphicon {
+    display:none;
+  }
+  .navbar a {
+    color:#000;
+  }
+  .navbar a:hover {
+    color:#23527c;
+  }
+  .mainNav {
+    display:block;
+  }
+  .navmenuTitle {
+    display:none;
+  }
+  .sticky {
+    position:fixed;
+    top:0;
+    width:100%;
+    max-width:100%;
+    z-index:1000;
+  }
+
+      /* Sub Nav (Dropdowns) */
+    .dropdown>ul {
+      text-align:left;
+    }
+    .dropdown-menu {
+      background-color: #e6e6e6;/* Lighter Theme Color 01 */
+      left:-10px;
+      margin:0;
+      max-height:393px;
+      overflow:scroll;
+      /*display:none;*/
+    }
+    /*
+    .dropdown:hover .dropdown-menu {
+      display:block;
+    }
+    */
+    .dropdown-menu>li {
+      width:100%;
+      padding:0;
+    }
+    .dropdown-menu>li::after {
+      content: none;
+    }
+    .dropdown-menu>li>a {
+      color:#fff; /* Lightest Theme color 03*/
+      padding:9px 20px;
+    }
+    .dropdown-menu>li>a:hover {
+      background-color: #fff; /* Lightest Theme color 03*/
+      
+    }
+
+
+  /* Dropdown Menu */
+  .main-nav-item {
+    position:relative;
+  }
+  .main-nav-item:hover .sub-nav-menu-1 {
+    display:block;
+  }
+  .sub-nav-menu-1 {
+    display: none;
+    position: absolute;
+    background-color: #f0f0f0;
+    width:100%;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    margin-top:8px !important;
+    margin-left:-24px;
+    text-align:left !important;
+  }
+
+  .sub-nav-menu-1 li {
+    padding:5px;
+  }
+
+
+/* hero image*/
+.heroImg {
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Tagline section under hero img*/
+#tagline_section{
+  text-align: center;
+  font-size: 24px;
+  font-weight: bold;
+  padding-top: 10px;
+  box-shadow: 5px 5px 30px #888888;
+}
+
+/*headings for the different sections */
+ h2 {
+  margin-bottom: 40px;
+}
+
+ #offpolTxt h4 {
+  margin-top: 30px;
+}
+
+#offpolTxt{
+  padding-right:150px;
+}
+
+/* Image highlight section 
+#highlight_section {
+    background-color: blanchedalmond;
+    padding-left: 20%; 
+    padding-right: 20%;
+    width:100%;
+    text-align: center;
+}*/
+
+/* About section */
+#aboutContent {
+    padding-left: 60px;
+    padding-right: 60px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    max-width: 100%;
+    width:100%; 
+}
+
+#aboutTxt {
+  padding-right:150px;
+}
+
+#about_img {
+  width:100%;
+  margin-top: 45px;
+}
+
+/* Insurance accordion list sections */
+#accordIns { 
+  text-align: center;
+}
+
+.accordContent {
+  padding-left: 60px;
+  padding-right: 60px;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  max-width: 100%; 
+  background-color: #E6E6E6; /* Lighter Theme Color 1 */
+}
+
+
+
+#accordIns h2 {
+  text-align: left;
+  
+}
+
+#accordIns li {
+  list-style-position: inside;
+  text-align: center;
+}
+
+.fullInsurance {
+    font-family:'Open Sans', sans-serif;
+    font-size:12px;
+    letter-spacing:2px;
+    text-transform:uppercase;
+    margin-top:25px;
+}
+
+.xpIns-item {
+  display:none;
+}
+#moreIns-trig {
+  display:block;
+}
+#lessIns-trig {
+  display:none;
+}
+#moreIns-trig:hover, #lessIns-trig:hover {
+  color:#22537e;
+  cursor: pointer;
+}
+
+.accordion-list {
+  padding-left:0;
+  float: left;
+}
+
+
+/* office policies section */ 
+#offPolContent {
+    padding-left: 60px;
+    padding-right: 60px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    max-width: 100%;; 
+}
+
+/* office policies buttons */
+#buttons{
+  margin-top:70px;
+}
+.buttonappt {
+  margin-top: 20px;
+}
+.cardImg {
+  margin-bottom:12px;
+}
+.btnimg{
+  float: left;
+  max-width: 300px; 
+  margin-left: auto; 
+  margin-right: auto; 
+  display:block;
+}
+
+/* Patient Edu accordion list section */
+#accordEdu {
+  text-align: center;
+  
+}
+#accordEdu h2 {
+  text-align: left;
+  
+}
+
+#accordEdu li {
+  list-style-position: inside;
+  text-align: center;
+}
+
+.fullContent {
+    font-family:'Open Sans', sans-serif;
+    font-size:12px;
+    letter-spacing:2px;
+    text-transform:uppercase;
+    margin-top:25px;
+}
+
+.xpContent-item {
+  display:none;
+}
+#moreContent-trig {
+  display:block;
+}
+#lessContent-trig {
+  display:none;
+}
+#moreContent-trig:hover, #lessContent-trig:hover {
+  color:#22537e;
+  cursor: pointer;
+}
+
+/* -------------- location section -------------- */
+#locationContent {
+  padding-left: 60px;
+  padding-right: 60px;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  max-width: 100%;; 
+}
+
+#locationInfo_addr {
+  font-size:15px;
+}
+#locationInfo_hrs {
+  font-size:15px;
+}
+#locationInfo_map {
+  width: 90%;
+  margin-top: 30px;
+  
+}
+  
+th {
+  text-align: right;
+}
+
+td {
+  padding-left: 15px;
+}
+
+/* -------------- contact section -------------- */
+#simpleContact {
+  padding-left: 60px;
+  padding-right: 60px;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  max-width: 100%;; 
+  background-color: #e6e6e6; /* Light Theme Color 2 */
+}
+
+#simpleContact h2 {
+  padding-top:50px;
+}
+
+#phiContainer {
+  background-color:  #e6e6e6;/* Lighter Theme Color 01 */
+  padding-top: 5px;
+  border-radius: 5px;
+  text-align: left;
+  border: solid 2px #b3b3b3;
+  margin-bottom: 10px;
+}
+#phiWidth {
+  width: 90%;
+  margin-left:auto;
+  margin-right:auto;
+}
+
+#chbxPHI p {
+  font-size:15px;
+}
+
+.redaster {
+  color:#ff0000;
+}
+
+#sendMsg{
+  background-color:#000;
+  margin: 20px auto 50px;
+  display: block;
+  border-color:#000;
+}
+#sendMsg:hover {
+  background-color:#acacac;
+  border-color:#acacac;
+  cursor:pointer;
+}
+
+/* === Footer Menu=== */
+footer {
+  width:100%;
+  background-color:#000;
+  color:#fff;
+  font-family:'Open Sans', sans-serif;
+  font-size:16px;
+  padding:40px 0 30px;
+  float:left;
+}
+footer ul {
+  list-style-type:none;
+  margin:0;
+}
+footer a {
+  color:#fff;
+}
+.footnote {
+  text-align:center;
+  font-size:12px;
+  padding-top:30px;
+  padding-bottom:25px;
+}
+
+.noPadding {
+  padding: 0 !important;
+}
+.noMargin {
+  margin: 0 !important;
+}
+
+/* === Footer Menu | Social === */
+.footmenuSocial {
+  display:block;
+  width:280px;
+  margin:30px auto;
+}
+  .footmenuSocial .iconSocial {
+    border:2px solid #fff;
+    border-radius:50%;
+    float:left;
+    margin:0 5px;
+  }
+
+
+/* media query for desktop viewport targets screen size with a minimum width of 1200px */
+/*_______________________--------------------------------__________________________*/
+
+@media only screen and (min-width: 1200px) {
+
+  /* === Navigation === */
+  #navDropdown {
+      display:none !important;
+  }
+
+
+
+  /* main content after nav for desktop screens*/
+  .mainContent {
+    margin-top: 0px;
+  }
+
+  /* about content desktop*/
+  #aboutContent {
+    padding-left: 60px;
+    padding-right: 60px;
+   
+  }
+
+  /*office policies section desktop*/
+  #offPolContent {
+    padding-left: 60px;
+    padding-right: 60px;
+  
+  }
+
+  /* office policies section */
+  #buttons{
+    margin-top:40px;
+  }
+
+
+  /*locations section desktop*/
+  #locationContent {
+    padding-left: 60px;
+    padding-right: 60px;
+  }
+
+  /* Contact section desktop*/
+  #simpleContact {
+    padding-left: 60px;
+    padding-right: 60px;
+  }
+  #phiWidth {
+  width: 75%;
+  }
+
+}
+
+/* Landscape Tablet */
+/*_______________________--------------------------------__________________________*/
+@media (max-width: 1199px) {
+
+/* === Navigation === */
+.navbar {
+  height: 50px;
+}
+  .navbar .glyphicon {
+    display:block;
+    z-index:100;
+  }
+  .navbar .glyphicon:hover {
+    color:#4d4d4d; /* Darker Theme Color 02 (default) */
+  }
+  .navbar .glyphicon-menu-hamburger:hover {
+    background-color:#b3b3b3; /* Dark Theme Color 01 */
+    color:#fff; /* Lightest Theme color 03*/
+  }
+  .mainNav {
+    display:none;
+  }
+  .navmenuTitle {
+    display:block;
+    position:absolute;
+    right:60px;
+    color:#000;
+    text-transform:uppercase;
+    letter-spacing:2px;
+    font-size:20px;
+    padding-top:10px;
+    z-index:100;
+  }
+  .navmenuTitle:hover {
+    color:#4d4d4d; /* Darker Theme Color 02 (default)*/
+  }
+
+  #navDropdown {
+    width:100%;
+    border-bottom: 1px solid #000;
+  }
+  #navDropdown ul {
+    list-style-type:none;
+    font-family: 'Open Sans', sans-serif;
+    padding-left:0;
+    margin-bottom:0;
+    width: 100%;
+  }
+  #navDropdown li {
+    text-align:center;
+    background-color:#cccccc; /* Light Theme Color 2 */
+    color:#000;
+    border-top:1px solid #000;
+    text-transform:uppercase;
+    padding:10px 0;
+  }
+  #navDropdown li:hover {
+    background-color:#E6E6E6; /* Lighter Theme Color 1*/
+  }
+  #navDropdown a {
+    color:#000;
+  }
+  .stickyDrop {
+    position:fixed;
+    top:50px;
+    width: 100%;
+    max-width:100%;
+    z-index:1000;
+
+  }
+
+.btnMenu {
+  width:40px;
+  color:#000;
+  font-size:26px;
+  border:3px solid #000;
+  border-radius:8px;
+  padding:4px;
+  margin-top:3px;
+  position:absolute;
+  right:10px;
+}
+
+.btnMenu:hover {
+  border:3px solid #fff; /* Lightest Theme color 03*/
+}
+  .btnHome {
+    width:40px;
+    color:#000;
+    font-size:26px;
+    padding:4px;
+    margin-top:7px;
+    position:absolute;
+    left:10px;
+  }
+  .btnPhone {
+    width:40px;
+    color:#000;
+    font-size:26px;
+    padding:4px;
+    margin-top:7px;
+    position:absolute;
+    left:60px;
+  }
+  .btnAppt {
+    width:40px;
+    color:#000;
+    font-size:26px;
+    padding:4px;
+    margin-top:7px;
+    position:absolute;
+    left:110px;
+  }
+  .btnLoc {
+    width:40px;
+    color:#000;
+    font-size:26px;
+    padding:4px;
+    margin-top:7px;
+    position:absolute;
+    left:160px;
+  }
+ 
+  
+  /* nav dropdown*/
+
+      .dropdown ul {
+      margin-left:10px !important;
+      padding:0;
+    }
+    .dropdown .dropdown-menu li {
+      padding:0 !important;
+      background-color: #f0f0f0; 
+    }
+
+ 
+
+  /* Office policies mobile*/
+  #offPolContent {
+    padding-left: 60px;
+    padding-right: 60px;
+  }
+}
+
+/*_______________________--------------------------------__________________________*/
+@media (max-width: 991px) {
+
+  #tagline_section p{
+  font-size: 18px;
+  padding-bottom: 10px;
+}
+
+
+  #buttons{
+    margin-top:35px;
+  }
+
+    #practiceTxt {
+    font-size:26px;
+  }
+  #navPhone {
+    font-size:16px;
+  }
+
+  #taglineTxt{
+    font-size: 14px;
+  }
+
+}
+
+
+
+/* Landscape Mobile */
+/*_______________________--------------------------------__________________________*/
+@media (max-width: 767px) {
+
+  practiceTxt {
+    font-size: 23px;
+  }
+
+  #taglineTxt{
+    font-size: 14px;
+  }
+
+    #navPhone {
+    font-size:16px;
+    text-align: center;
+    padding: 20px 0 0;
+    font-size: 16px;
+    padding-right: 0px;
+  }
+
+  /* === Navigation === */
+  .navmenuTitle {
+    display:none;
+  }
+  .btnAppt {
+    display:none !important;
+  }
+  .btnLoc {
+    display:none !important;
+  }
+
+    #tagline_section p{
+  font-size: 16px;
+  
+}
+
+  #aboutTxt{
+    padding-right:0px;
+  }
+
+  #offpolTxt{
+  padding-right:0px;
+}
+  
+  footer img {
+    display:block;
+    margin:0 auto 30px;
+  }
+}
+
+/*_______________________--------------------------------__________________________*/
+/* Midsize Responsive Troubleshooting */
+@media (max-width: 639px) {
+  #practicelogo{
+    height: 90px;
+  }
+
+  #navPhone{
+    text-align: center;
+    padding: 20px 0 0;
+    font-size: 16px;
+    padding-right: 0px;
+  }
+
+
+  #navLogo{
+    padding:25px 0 0;
+    margin-right:10px;
+  }
+
+  #headingTxt {
+    padding: 35px 0 0;
+  }
+
+  #practiceTxt {
+    font-size: 24px;
+  }
+
+  #taglineTxt{
+    font-size: 14px;
+  }
+
+  footer {
+    text-align:center;
+  }
+  footer ul {
+    padding:0;
+    line-height:30px;
+  }
+}
+
+/* media query for mobile viewport targets screen size with a minimum width of 480 */
+/*_______________________--------------------------------__________________________*/
+@media only screen and (max-width:480px) {
+
+  #practicelogo{
+    height: 80px;
+  }
+
+  #navPhone{
+    text-align: center;
+    padding: 20px 0 0;
+    font-size: 16px;
+    padding-right: 0px;
+  }
+
+
+  #navLogo{
+    padding:25px 0 0;
+    margin-right:10px;
+  }
+
+  #headingTxt {
+    padding: 35px 0 0;
+  }
+
+  #practiceTxt {
+    font-size: 20px;
+  }
+
+  #taglineTxt{
+    font-size: 14px;
+  }
+
+
+
+  #highlight_section {
+    display: none;
+  }
+  /* About section mobile*/
+  #aboutContent {
+    margin-top: 5px;
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+
+  #aboutTxt {
+    padding-right: 10px;
+  }
+  
+  /*  insurance accord section mobile */
+  .accordContent {
+    margin-top: 5px;
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+
+    #accordContent h2 {
+      text-align:left;
+  }
+  /* Office policies mobile*/
+  #offPolContent {
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+
+
+    #buttons{
+    margin-top:20px;
+  }
+  .btnimg{
+    float: none;
+  }
+
+
+  /*  patient edu accord section mobile
+  #accordEdu {
+    padding-left: 30px;
+    padding-right: 30px;
+  } */
+
+  #offhrs{
+    margin-top: 30px;
+  }
+
+  /*  location section mobile*/
+  #locationContent {
+      padding-left: 30px;
+      padding-right: 30px;
+    }
+
+
+  /*  contact section mobile */
+  #simpleContact {
+    padding-left: 30px;
+    padding-right: 30px;
+    }
+  #chbxPHI p {
+    font-size:13px;
+  }
+    #phiWidth {
+    width: 100%;
+    }
+
+}
+
+/*_______________________--------------------------------__________________________*/
+@media only screen and (max-width:374px) {
+  #practiceTxt {
+    font-size:16px;
+  }
+  #navPhone {
+    padding-top: 12px;
+    font-size:14px;
+  }
+
+  #taglineTxt{
+    font-size: 12px;
+  }
+
+  #topNav {
+    height:155px;
+  }
+}
