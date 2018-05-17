@@ -91,7 +91,7 @@
   color: #000;
 }
 .navbar a:hover {
-  color: #23527c;
+  color: #cccccc;
 }
 .mainNav {
   display: block;
@@ -209,6 +209,23 @@ h2 {
   width: 100%;
   margin-top: 45px;
 }
+
+.showMorePage {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 12px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  margin-top: 25px;
+  text-align: center;
+} 
+.showMorePage a {
+  color: #000;
+}
+.showMorePage a:hover{
+  color: #5b5b5b;
+
+}
+
 /* Insurance accordion list sections */
 #accordIns {
   text-align: center;
@@ -219,8 +236,8 @@ h2 {
   padding-top: 50px;
   padding-bottom: 50px;
   max-width: 100%;
-  background-color: #E6E6E6;
-  /* Lighter Theme Color 1 */
+  background-color: #E6E6E6;/* Lighter Theme Color 1 */
+  
 }
 #accordIns h2 {
   text-align: left;
@@ -247,7 +264,7 @@ h2 {
 }
 #moreIns-trig:hover,
 #lessIns-trig:hover {
-  color: #22537e;
+  color: #5b5b5b;
   cursor: pointer;
 }
 .accordion-list {
@@ -311,7 +328,7 @@ h2 {
 }
 #moreContent-trig:hover,
 #lessContent-trig:hover {
-  color: #22537e;
+  color: #5b5b5b;
   cursor: pointer;
 }
 /* -------------- location section -------------- */
@@ -321,6 +338,9 @@ h2 {
   margin-top: 50px;
   margin-bottom: 50px;
   max-width: 100%;
+}
+#locationContent p {
+  margin: 0;
 }
 #locationInfo_addr {
   font-size: 15px;
@@ -388,7 +408,7 @@ footer {
   background-color: #000;
   color: #fff;
   font-family: 'Open Sans', sans-serif;
-  font-size: 16px;
+  font-size: 14px;
   padding: 40px 0 30px;
   float: left;
 }
@@ -399,9 +419,12 @@ footer ul {
 footer a {
   color: #fff;
 }
+footer a:hover {
+  color: #cccccc;
+}
 .footnote {
   text-align: center;
-  font-size: 12px;
+  font-size: 10px;
   padding-top: 30px;
   padding-bottom: 25px;
 }
@@ -484,8 +507,8 @@ footer a {
   .navbar .glyphicon-menu-hamburger:hover {
     background-color: #b3b3b3;
     /* Dark Theme Color 01 */
-    color: #fff;
-    /* Lightest Theme color 03*/
+    color: #4d4d4d;
+    /* Darker Theme Color 02 (default)*/
   }
   .mainNav {
     display: none;
@@ -544,15 +567,15 @@ footer a {
     color: #000;
     font-size: 26px;
     border: 3px solid #000;
-    border-radius: 8px;
+    border-radius: 5px;
     padding: 4px;
     margin-top: 3px;
     position: absolute;
     right: 10px;
   }
   .btnMenu:hover {
-    border: 3px solid #fff;
-    /* Lightest Theme color 03*/
+    border: 3px solid #4d4d4d;
+    /* Darker Theme Color 02 (default)*/
   }
   .btnHome {
     width: 40px;
