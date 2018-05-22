@@ -1,5 +1,9 @@
 /* Theme Colors two main colors and text colors*/
 /*Fonts*/
+/*
+& when (@myVariable = 'value1'), (@myVariable = 'value2') {
+    background: red;
+}*/
 /* navigation */
 .width1200 {
   max-width: 1200px;
@@ -9,9 +13,11 @@
 #topNav {
   width: 100%;
   height: 180px;
-  background: #2980b9;
+  background: blue;
   font-family: 'Arial', sans-serif;
   color: #fff;
+  color: black;
+  border-color: black;
 }
 /* Header above nav */
 #practicelogo {
@@ -20,6 +26,12 @@
 #navLogo {
   float: left;
   padding: 25px;
+}
+#navLogo .fas {
+  font-size: 100px;
+  color: #fff;
+  color: black;
+  border-color: black;
 }
 #headingTxt {
   padding: 50px 0 0;
@@ -55,9 +67,9 @@
   width: 100%;
   height: 40px;
   min-height: 40px !important;
-  background-color: #939e9f;
+  background-color: cyan;
   /* Light Theme Color 2 */
-  color: #000;
+  color: #fff;
   border-radius: 0 !important;
   margin-bottom: 0 !important;
   box-shadow: 0 5px 30px grey;
@@ -66,11 +78,14 @@
   list-style-type: none;
   text-align: center;
   margin-top: 0;
+  color: black;
+  border-color: black;
 }
 .navbar li {
   font-family: 'Arial', sans-serif;
   font-size: 14px;
-  color: #000;
+  color: black;
+  border-color: black;
   display: inline-block;
   text-transform: uppercase;
   padding-left: 15px;
@@ -88,7 +103,8 @@
   display: none;
 }
 .navbar a {
-  color: #000;
+  color: black;
+  border-color: black;
 }
 .navbar a:hover {
   color: #cccccc;
@@ -111,8 +127,8 @@
   text-align: left;
 }
 .dropdown-menu {
-  background-color: #c9cfcf;
-  /*Check this again #e6e6e6; Lighter Theme Color 01 */
+  background-color: #66ffff;
+  /*Color Barely Shows */
   left: -10px;
   margin: 0;
   max-height: 393px;
@@ -131,10 +147,16 @@
   padding: 9px 20px;
 }
 .dropdown-menu > li > a:hover {
-  background-color: #fff;
-  /* Lightest Theme color 03*/
+  background-color: #80ffff;
 }
 /* Dropdown Menu */
+#navDropdown ul li .dropdown ul .dropdown-menu li {
+  background-color: red;
+}
+/*
+  .dropdown-menu li {
+    background-color: red;
+  }*/
 .main-nav-item {
   position: relative;
 }
@@ -163,17 +185,21 @@
   margin-right: auto;
 }
 #imgBackColor {
-  background-color: #c9cfcf;
+  background-color: #66ffff;
   /*#E6E6E6;*/
 }
 /* Tagline section under hero img*/
 #tagline_section {
-  background-color: #2980b9;
+  background-color: blue;
   color: #fff;
-  font-family: #fff !important;
+  font-family: 'Times New Roman', Times, serif;
+  color: black;
+  border-color: black;
 }
 #tagline_section p {
-  margin: 0;
+  margin: auto;
+  padding-top: 10px;
+  padding-bottom: 10px;
 }
 #tagline_section {
   text-align: center;
@@ -185,6 +211,15 @@
 }
 .mainFont {
   font-family: 'Open Sans', sans-serif;
+}
+.alt-content-a {
+  background-color: #fff;
+}
+.alt-content-b {
+  /*.alt-Content-B-Color(@bottomNav);*/
+  background-color: #4dffff;
+  color: black;
+  border-color: black;
 }
 /*headings for the different sections */
 h2 {
@@ -218,7 +253,7 @@ h2 {
   color: #000;
 }
 .showMorePage a:hover {
-  color: #4d4d4d;
+  color: #d9d9d9;
 }
 /* About section */
 #aboutContent {
@@ -246,8 +281,6 @@ h2 {
   padding-top: 50px;
   padding-bottom: 50px;
   max-width: 100%;
-  background-color: #c9cfcf;
-  /*  #E6E6E6; Lighter Theme Color 1 */
 }
 #accordIns h2 {
   text-align: left;
@@ -274,8 +307,9 @@ h2 {
 }
 #moreIns-trig:hover,
 #lessIns-trig:hover {
-  color: #4d4d4d;
+  text-decoration: underline;
   cursor: pointer;
+  color: #00b2b3;
 }
 .accordion-list {
   padding-left: 0;
@@ -320,6 +354,11 @@ h2 {
   list-style-position: inside;
   text-align: center;
   cursor: pointer;
+  text-decoration: underline;
+  color: yellow;
+}
+#accordEdu li a {
+  color: yellow;
 }
 .fullContent {
   /*font-family:'Open Sans', sans-serif;*/
@@ -339,8 +378,9 @@ h2 {
 }
 #moreContent-trig:hover,
 #lessContent-trig:hover {
-  color: #5b5b5b;
   cursor: pointer;
+  text-decoration: underline;
+  color: #00b2b3;
 }
 /* -------------- location section -------------- */
 #locationContent {
@@ -379,8 +419,8 @@ h2 {
   margin-top: 0px;
   margin-bottom: 0px;
   max-width: 100%;
-  background-color: #c9cfcf;
-  /*#e6e6e6;  Light Theme Color 2 */
+  /*background-color: lighten(@bottomNav,20%); 
+  .colorTransformBW(@bottomNav);*/
 }
 #simpleContact h2 {
   padding-top: 50px;
@@ -393,6 +433,7 @@ h2 {
   text-align: left;
   border: solid 2px #b3b3b3;
   margin-bottom: 10px;
+  color: #1a1a1a;
 }
 #phiWidth {
   width: 90%;
@@ -409,24 +450,25 @@ h2 {
   padding-left: 10px;
 }
 #sendMsg {
+  background-color: blue;
   color: black;
   border-color: black;
-  background-color: #2980b9;
+  /*.colorTransformBW(lighten(@mainNavFooter,30%));*/
   margin: 20px auto 50px;
   display: block;
 }
 #sendMsg:hover {
   cursor: pointer;
-  background-color: #94c6e7;
+  background-color: #9999ff;
   color: black;
   border-color: black;
   /*border-color: @mainNavFooterTxt;
-  .btnTxtColor(@mainNavFooterTxt);*/
+  .colorTransformBW(@mainNavFooterTxt);*/
 }
 /* === Footer Menu=== */
 footer {
   width: 100%;
-  background-color: #2980b9;
+  background-color: blue;
   color: #fff;
   font-family: #fff;
   font-size: 14px;
@@ -439,6 +481,8 @@ footer ul {
 }
 footer a {
   color: #fff;
+  color: black;
+  border-color: black;
 }
 footer a:hover {
   color: #cccccc;
@@ -449,6 +493,8 @@ footer a:hover {
   padding-top: 30px;
   padding-bottom: 25px;
   margin-top: 30px;
+  color: black;
+  border-color: black;
 }
 .noPadding {
   padding: 0 !important;
@@ -523,11 +569,14 @@ footer a:hover {
     z-index: 100;
   }
   .navbar .glyphicon:hover {
-    color: #4d4d4d;
+    color: #00b2b3;
+  }
+  .navmenuTitle:hover {
+    color: #00b2b3;
   }
   .navbar .glyphicon-menu-hamburger:hover {
-    background-color: #b3b3b3;
-    color: #4d4d4d;
+    color: #00b2b3;
+    border: 3px solid #00b2b3;
     cursor: pointer;
   }
   .mainNav {
@@ -537,7 +586,8 @@ footer a:hover {
     display: block;
     position: absolute;
     right: 60px;
-    color: #000;
+    color: black;
+    border-color: black;
     text-transform: uppercase;
     letter-spacing: 2px;
     font-size: 20px;
@@ -545,12 +595,12 @@ footer a:hover {
     z-index: 100;
   }
   .navmenuTitle:hover {
-    color: #4d4d4d;
+    color: #00b2b3;
     cursor: pointer;
   }
   #navDropdown {
     width: 100%;
-    border-bottom: 1px solid #000;
+    border-bottom: 1px solid black;
   }
   #navDropdown ul {
     list-style-type: none;
@@ -561,16 +611,19 @@ footer a:hover {
   }
   #navDropdown li {
     text-align: center;
-    background-color: #cccccc;
-    /* Light Theme Color 2 */
-    color: #000;
+    /*background-color:#cccccc;  Light Theme Color 2 
+    color:#000;*/
+    color: black;
+    border-color: black;
+    color: #00b2b3;
+    background-color: #00b2b3;
     border-top: 1px solid #000;
     text-transform: uppercase;
     padding: 10px 0;
   }
   #navDropdown li:hover {
-    background-color: #E6E6E6;
-    /* Lighter Theme Color 1*/
+    color: #00e5e5;
+    background-color: #00e5e5;
   }
   #navDropdown a {
     color: #000;
@@ -584,22 +637,22 @@ footer a:hover {
   }
   .btnMenu {
     width: 40px;
-    color: #000;
+    color: black;
+    border-color: black;
     font-size: 26px;
-    border: 3px solid #000;
-    border-radius: 8px;
+    border: 3px solid ;
+    border-radius: 6px;
     padding: 4px;
     margin-top: 3px;
     position: absolute;
     right: 10px;
   }
   .btnMenu:hover {
-    border: 3px solid #4d4d4d;
-    /* Darker Theme Color 02 (default)*/
+    /* border:3px solid #4d4d4d; Darker Theme Color 02 (default)*/
+    color: #00b2b3;
   }
   .btnHome {
     width: 40px;
-    color: #000;
     font-size: 26px;
     padding: 4px;
     margin-top: 7px;
@@ -608,7 +661,6 @@ footer a:hover {
   }
   .btnPhone {
     width: 40px;
-    color: #000;
     font-size: 26px;
     padding: 4px;
     margin-top: 7px;
@@ -617,7 +669,6 @@ footer a:hover {
   }
   .btnAppt {
     width: 40px;
-    color: #000;
     font-size: 26px;
     padding: 4px;
     margin-top: 7px;
@@ -626,7 +677,6 @@ footer a:hover {
   }
   .btnPort {
     width: 40px;
-    color: #000;
     font-size: 26px;
     padding: 4px;
     margin-top: 7px;
@@ -635,7 +685,6 @@ footer a:hover {
   }
   .btnDolo {
     width: 40px;
-    color: #000;
     font-size: 26px;
     padding: 4px;
     margin-top: 7px;
@@ -649,7 +698,6 @@ footer a:hover {
   }
   .dropdown .dropdown-menu li {
     padding: 0 !important;
-    background-color: #f0f0f0;
   }
   /* Office policies mobile*/
   #offPolContent {
