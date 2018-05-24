@@ -171,15 +171,18 @@
 }
 /* hero image */
 .heroImg {
-  /*max-width: 1200px;
+  max-width: 1200px;
   margin-left: auto;
-  margin-right: auto;*/
+  margin-right: auto;
   display: flex;
   align-items: center;
   justify-content: center;
 }
+#imgBanner {
+  box-shadow: 0 5px 20px #333;
+}
 #imgBackColor {
-  background-color: #d9d9d9;
+  background-color: #cccccc;
   /*#E6E6E6;*/
 }
 /* Tagline section under hero img*/
