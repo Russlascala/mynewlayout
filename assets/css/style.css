@@ -13,11 +13,11 @@
 #topNav {
   width: 100%;
   height: 180px;
-  background: blue;
+  background: #2980b9;
   font-family: 'Arial', sans-serif;
   color: #fff;
-  color: black;
-  border-color: black;
+  color: white;
+  border-color: white;
 }
 /* Header above nav */
 #practicelogo {
@@ -30,8 +30,8 @@
 #navLogo .fas {
   font-size: 100px;
   color: #fff;
-  color: black;
-  border-color: black;
+  color: white;
+  border-color: white;
 }
 #headingTxt {
   padding: 50px 0 0;
@@ -67,7 +67,7 @@
   width: 100%;
   height: 40px;
   min-height: 40px !important;
-  background-color: cyan;
+  background-color: #a6a6a6;
   /* Light Theme Color 2 */
   color: #fff;
   border-radius: 0 !important;
@@ -127,8 +127,7 @@
   text-align: left;
 }
 .dropdown-menu {
-  background-color: #66ffff;
-  /*Color Barely Shows */
+  background-color: #cccccc;
   left: -10px;
   margin: 0;
   max-height: 393px;
@@ -142,21 +141,13 @@
   content: none;
 }
 .dropdown-menu > li > a {
-  color: #000;
-  /* Lighter Theme color 03*/
   padding: 9px 20px;
+  background-color: #b3b3b3;
 }
 .dropdown-menu > li > a:hover {
-  background-color: #80ffff;
+  background-color: #cccccc;
 }
 /* Dropdown Menu */
-#navDropdown ul li .dropdown ul .dropdown-menu li {
-  background-color: red;
-}
-/*
-  .dropdown-menu li {
-    background-color: red;
-  }*/
 .main-nav-item {
   position: relative;
 }
@@ -185,16 +176,16 @@
   margin-right: auto;
 }
 #imgBackColor {
-  background-color: #66ffff;
+  background-color: #d9d9d9;
   /*#E6E6E6;*/
 }
 /* Tagline section under hero img*/
 #tagline_section {
-  background-color: blue;
+  background-color: #2980b9;
   color: #fff;
   font-family: 'Times New Roman', Times, serif;
-  color: black;
-  border-color: black;
+  color: white;
+  border-color: white;
 }
 #tagline_section p {
   margin: auto;
@@ -217,7 +208,6 @@
 }
 .alt-content-b {
   /*.alt-Content-B-Color(@bottomNav);*/
-  background-color: #4dffff;
   color: black;
   border-color: black;
 }
@@ -253,7 +243,7 @@ h2 {
   color: #000;
 }
 .showMorePage a:hover {
-  color: #d9d9d9;
+  color: #cccccc;
 }
 /* About section */
 #aboutContent {
@@ -309,7 +299,7 @@ h2 {
 #lessIns-trig:hover {
   text-decoration: underline;
   cursor: pointer;
-  color: #00b2b3;
+  color: #737373;
 }
 .accordion-list {
   padding-left: 0;
@@ -380,7 +370,7 @@ h2 {
 #lessContent-trig:hover {
   cursor: pointer;
   text-decoration: underline;
-  color: #00b2b3;
+  color: #737373;
 }
 /* -------------- location section -------------- */
 #locationContent {
@@ -450,25 +440,25 @@ h2 {
   padding-left: 10px;
 }
 #sendMsg {
-  background-color: blue;
-  color: black;
-  border-color: black;
+  background-color: #2980b9;
+  color: white;
+  border-color: white;
   /*.colorTransformBW(lighten(@mainNavFooter,30%));*/
   margin: 20px auto 50px;
   display: block;
 }
 #sendMsg:hover {
   cursor: pointer;
-  background-color: #9999ff;
-  color: black;
-  border-color: black;
+  background-color: #94c6e7;
+  color: white;
+  border-color: white;
   /*border-color: @mainNavFooterTxt;
   .colorTransformBW(@mainNavFooterTxt);*/
 }
 /* === Footer Menu=== */
 footer {
   width: 100%;
-  background-color: blue;
+  background-color: #2980b9;
   color: #fff;
   font-family: #fff;
   font-size: 14px;
@@ -481,8 +471,8 @@ footer ul {
 }
 footer a {
   color: #fff;
-  color: black;
-  border-color: black;
+  color: white;
+  border-color: white;
 }
 footer a:hover {
   color: #cccccc;
@@ -493,8 +483,8 @@ footer a:hover {
   padding-top: 30px;
   padding-bottom: 25px;
   margin-top: 30px;
-  color: black;
-  border-color: black;
+  color: white;
+  border-color: white;
 }
 .noPadding {
   padding: 0 !important;
@@ -569,14 +559,13 @@ footer a:hover {
     z-index: 100;
   }
   .navbar .glyphicon:hover {
-    color: #00b2b3;
+    color: #737373;
   }
   .navmenuTitle:hover {
-    color: #00b2b3;
+    color: #737373;
   }
   .navbar .glyphicon-menu-hamburger:hover {
-    color: #00b2b3;
-    border: 3px solid #00b2b3;
+    color: #737373;
     cursor: pointer;
   }
   .mainNav {
@@ -595,7 +584,7 @@ footer a:hover {
     z-index: 100;
   }
   .navmenuTitle:hover {
-    color: #00b2b3;
+    color: #737373;
     cursor: pointer;
   }
   #navDropdown {
@@ -615,15 +604,15 @@ footer a:hover {
     color:#000;*/
     color: black;
     border-color: black;
-    color: #00b2b3;
-    background-color: #00b2b3;
+    color: #8d8d8d;
+    background-color: #8d8d8d;
     border-top: 1px solid #000;
     text-transform: uppercase;
     padding: 10px 0;
   }
   #navDropdown li:hover {
-    color: #00e5e5;
-    background-color: #00e5e5;
+    color: #a6a6a6;
+    background-color: #a6a6a6;
   }
   #navDropdown a {
     color: #000;
@@ -649,7 +638,7 @@ footer a:hover {
   }
   .btnMenu:hover {
     /* border:3px solid #4d4d4d; Darker Theme Color 02 (default)*/
-    color: #00b2b3;
+    color: #737373;
   }
   .btnHome {
     width: 40px;

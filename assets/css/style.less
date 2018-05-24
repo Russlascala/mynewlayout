@@ -1,10 +1,14 @@
 
 /* Theme Colors two main colors and text colors*/
-@mainNavFooter: blue ; // 2980b9 colorA
+@mainNavFooter: #2980b9 ; // 2980b9 colorA
 @mainNavFooterTxt: #fff; //colorA1
 
-@bottomNav: cyan; //a6a6a6 colorB  Alternates section B Color
+@bottomNav: #a6a6a6; //a6a6a6 colorB  Alternates section B Color
 @bottomTxt: #fff; // colorB MAIN THEME COLOR for text
+
+//color Percents
+@altSecBColor: lighten(@bottomNav,15%);
+
 //Alternating section a color
 @otherSections: #fff;
 @linkColorsPatEdu: yellow;
@@ -30,34 +34,21 @@
 }
 
 .smart-hover-color (@a) when (lightness(@a) >= 50%) {
-  color: darken(@a, 15%);
+  color: darken(@a, 20%);
 }
 .smart-hover-color (@a) when (lightness(@a) < 50%) {
-  color: lighten(@a, 15%);
+  color: lighten(@a, 20%);
 }
 
 //not being used 
 .smart-hover-color-bg (@a) when (lightness(@a) >= 50%) {
-  color: darken(@a, 15%);
-  background-color: darken(@a,15%);
+  color: darken(@a, 10%);
+  background-color: darken(@a,10%);
 }
 .smart-hover-color-bg (@a) when (lightness(@a) < 50%) {
   color: lighten(@a, 10%);
   background-color: lighten(@a, 10%);
 }
-
-.hamburg-menu-Color  (@a) when (lightness(@a) <= 50%) {
-  color: darken(@a, 15%);
-  //background-color: darken(@a,30%);
-  border: 3px solid darken(@a,15%);
-}
-
-.hamburg-menu-Color (@a) when (lightness(@a) > 50%) {
-    color: lighten(@a, 15%);
-  //background-color: lighten(@a, 30%);
-  border: 3px solid lighten(@a,15%);
-}
-
 
 /* navigation */
 .width1200{
@@ -186,7 +177,7 @@
       text-align:left;
     }
     .dropdown-menu {
-      background-color: lighten(@bottomNav,20%);  /*Color Barely Shows */
+      background-color: @altSecBColor;
       left:-10px;
       margin:0;
       max-height:393px;
@@ -202,25 +193,20 @@
       content: none;
     }
     .dropdown-menu>li>a {
-      color:#000; /* Lighter Theme color 03*/
+      //color: inherit;
+      //.colorTransformBW(@bottomNav);
+      //color:#000; /* Lighter Theme color 03*/
       padding:9px 20px;
+      background-color: lighten(@bottomNav,5%);
     }
     .dropdown-menu>li>a:hover {
       //background-color: #fff;  //Lightest Theme color 03
-      background-color: lighten(@bottomNav,25%);
-      
+      background-color: lighten(@bottomNav,15%);
+      //background-color: #000;      
       
     }
 ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
   /* Dropdown Menu */
-  #navDropdown ul li .dropdown ul .dropdown-menu li  {
-     //background-color: lighten(@bottomNav,25%);
-      background-color: red;
-  }
-/*
-  .dropdown-menu li {
-    background-color: red;
-  }*/
   .main-nav-item {
     position:relative;
   }
@@ -288,7 +274,7 @@
 }
 .alt-content-b {
   /*.alt-Content-B-Color(@bottomNav);*/
-  background-color: lighten(@bottomNav,15%); 
+  //background-color: lighten(@bottomNav,15%); 
   .colorTransformBW(@bottomNav);
 }
 
@@ -705,7 +691,7 @@ footer a:hover{
   }
   /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
   .navbar .glyphicon-menu-hamburger:hover {
-    .hamburg-menu-Color(@bottomNav);
+    .smart-hover-color(@bottomNav);
     cursor: pointer;
   }
 
