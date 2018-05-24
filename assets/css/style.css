@@ -171,9 +171,9 @@
 }
 /* hero image */
 .heroImg {
-  max-width: 1200px;
+  /*max-width: 1200px;
   margin-left: auto;
-  margin-right: auto;
+  margin-right: auto;*/
   display: flex;
   align-items: center;
   justify-content: center;
@@ -211,6 +211,7 @@
 }
 .alt-content-b {
   /*.alt-Content-B-Color(@bottomNav);*/
+  background-color: #cccccc;
   color: black;
   border-color: black;
 }
