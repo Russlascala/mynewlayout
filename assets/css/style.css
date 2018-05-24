@@ -349,10 +349,13 @@ h2 {
   text-align: center;
   cursor: pointer;
   text-decoration: underline;
-  color: yellow;
+  color: red;
 }
 #accordEdu li a {
-  color: yellow;
+  color: red;
+}
+#accordEdu li a:hover {
+  color: #ff4d4d;
 }
 .fullContent {
   /*font-family:'Open Sans', sans-serif;*/
