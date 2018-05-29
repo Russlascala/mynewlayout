@@ -15,7 +15,6 @@
 
     <!-- Custom CSS -->
     <link rel="stylesheet" href="assets/css/style.css">
-
     <title>Template_boots3</title>
 </head>
 
@@ -267,15 +266,39 @@
         </div>
     </header>
     <div class="mainContent">
-        <!-- Hero image -->
+        <!-- Hero image 
         <div id='imgBackColor'>
-            <div class="heroImg">
-                <img src="assets/images/bannerimg/1.png" class="img-responsive" id="imgBanner" alt="">
+            <div class="heroImg" id="slidecontainer">
+                <div id="slideshow" class="fullwidth">
+                    <img src="assets/images/bannerimg/1.png" class="img-responsive" width="100%" id="imgBanner" alt="">
+                    <img src="assets/images/bannerimg/2.png" class="img-responsive" width="100%" id="imgBanner" alt="">
+                    <img src="assets/images/bannerimg/3.png" class="img-responsive" width="100%" id="imgBanner" alt="">
+                </div>
             </div>
+        </div>-->
+        <div class="row" style="margin:0">
+            <div class="span12" id='imgBackColor'>
+                <div class="slidecontainer heroImg">
+                    <div id="slideshow" class="fullwidth">
+                        <img src="assets/images/bannerimg/1.png" width="100%">
+                        <img src="assets/images/bannerimg/2.png" width="100%">
+                        <img src="assets/images/bannerimg/3.png" width="100%">
+                    </div>
+                    <img src="assets/images/bannerimg/blank.png" width="100%" style="max-height:450px; margin-top:2%">
+                </div>
+            </div>
+        
         </div>
         <!-- tagline text -->
-        <div class="col-md-12" id='tagline_section'>
-           <p>Tagline Section - Tag you're it!</p>
+        <div class="row" style="margin:0">
+            <div class="span12" id='tagline_section'>
+                <div class="tagTxt">
+                    <p>Tagline Section - Tag you're it!</p>
+                    <p>Our Focus Is on You!</p>
+                    <p>The Time and Attention You Need!</p>
+                    <p>Cutting Edge Technology!</p>
+                </div>
+            </div>
         </div>
         <!-- Highlight images
         <div class="col-md-12" id='highlight_section'>
@@ -751,13 +774,21 @@
 
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 
- 
-    
+
+    <!--Image Slideshow js-->
+    <!-- include jQuery library -->
+    <script src="https://code.jquery.com/jquery-1.7.2.min.js" integrity="sha256-R7aNzoy2gFrVs+pNJ6+SokH04ppcEqJ0yFLkNGoFALQ="
+        crossorigin="anonymous"></script>
+    <!-- include Cycle plugin -->
+    <script src="assets/js/jquery.cycle.all.js"></script>
+    <script type="text/javascript" src="assets/js/cycles.js"></script>
    
 
     <!-- Accordion JavaScript -->
     <script src="assets/js/jq-toggleDisplayItems.js"></script>
     <script src="assets/js/stickyNav.js"></script>
+    <!--<script src="assets/js/jquery.cycle.all.js"></script>
+    <script src="assets/js/cycles.js"></script>-->
     <!--<script> src="assets/js/dropdown.js"</script>-->
 
     <script type="application/javascript">

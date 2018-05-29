@@ -235,17 +235,33 @@
   max-width: 1200px;
   margin-left: auto;
   margin-right: auto;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  margin-top: -10px;
+  //margin-bottom: 1em;
+  //display: flex;
+  //align-items: center;
+  //width: 100%;
+  //justify-content: center;
+}
+/*======= Slideshow ========= 
+#slidecontainer {
+position: relative;
+z-index: 2;
+left: 0;
+top: 0;
+width: 100%;
+}
+*/
+.fullwidth {
+width: 100%;
 }
 
-#imgBanner {
+#slideshow img {
   box-shadow:0 5px 20px #333;
 }
 
 #imgBackColor {
   background-color: lighten(@bottomNav,15%); /*#E6E6E6;*/
+  //padding-bottom: 10px;
 }
 
 /* Tagline section under hero img*/
@@ -254,21 +270,21 @@
   color: @mainNavFooterTxt;
   font-family: @taglineFont; 
   .colorTransformBW(@mainNavFooter);
-}
-#tagline_section p {
-  margin: auto;
-  padding-top: 10px;
-  padding-bottom:10px;
-
-}
-
-#tagline_section{
+  //float: left;
   text-align: center;
   font-size: 24px;
   font-weight: bold;
-  padding-top: 10px;
-  padding-bottom: 10px;
+  padding-top: 20px;
+  padding-bottom: 20px;
   box-shadow: 0 5px 30px grey;
+}
+
+.tagTxt {
+  margin-left: auto;
+  margin-right: auto;
+}
+.tagTxt p{
+  margin-top: -1%;
 }
 
 //Main content under tagline
@@ -638,6 +654,7 @@ footer a:hover{
     margin-top: 0px;
   }
 
+
   /* about content desktop*/
   #aboutContent {
     padding-left: 60px;
@@ -854,7 +871,6 @@ footer a:hover{
 
   #tagline_section p{
   font-size: 18px;
-  padding-bottom: 10px;
 }
 
   #buttons{

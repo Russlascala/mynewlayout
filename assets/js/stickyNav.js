@@ -2,7 +2,7 @@ window.onscroll = function() {stickyNav()};
 
 var navbar = document.getElementsByClassName("navbar");
 var navDropdown = document.getElementById("navDropdown");
-var initiate = document.getElementById("imgBanner");
+var initiate = document.getElementById("slideshow");
 var sticky = initiate.offsetTop;
 
 function stickyNav() {
