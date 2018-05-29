@@ -1,9 +1,5 @@
 /* Theme Colors two main colors and text colors*/
-/*Fonts*/
-/*
-& when (@myVariable = 'value1'), (@myVariable = 'value2') {
-    background: red;
-}*/
+/*Fonts for top nav, main content, and taglines*/
 /* navigation */
 .width1200 {
   max-width: 1200px;
@@ -15,7 +11,6 @@
   height: 180px;
   background: #2980b9;
   font-family: 'Arial', sans-serif;
-  color: #fff;
   color: white;
   border-color: white;
 }
@@ -29,7 +24,6 @@
 }
 #navLogo .fas {
   font-size: 100px;
-  color: #fff;
   color: white;
   border-color: white;
 }
@@ -69,7 +63,6 @@
   min-height: 40px !important;
   background-color: #a6a6a6;
   /* Light Theme Color 2 */
-  color: #fff;
   border-radius: 0 !important;
   margin-bottom: 0 !important;
   box-shadow: 0 5px 30px grey;
@@ -198,7 +191,6 @@ width: 100%;
 /* Tagline section under hero img*/
 #tagline_section {
   background-color: #2980b9;
-  color: #fff;
   font-family: 'Times New Roman', Times, serif;
   color: white;
   border-color: white;
@@ -479,7 +471,6 @@ h2 {
 footer {
   width: 100%;
   background-color: #2980b9;
-  color: #fff;
   font-family: #fff;
   font-size: 14px;
   padding: 40px 0 30px;
@@ -490,7 +481,6 @@ footer ul {
   margin: 0;
 }
 footer a {
-  color: #fff;
   color: white;
   border-color: white;
 }

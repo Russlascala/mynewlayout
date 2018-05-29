@@ -1,54 +1,5 @@
-
-/* Theme Colors two main colors and text colors*/
-@mainNavFooter: #2980b9 ; // 2980b9 colorA
-@mainNavFooterTxt: #fff; //colorA1
-
-@bottomNav: #a6a6a6; //a6a6a6 colorB  Alternates section B Color
-@bottomTxt: #fff; // colorB MAIN THEME COLOR for text
-
-//color Percents
-@altSecBColor: lighten(@bottomNav,15%);
-
-//Alternating section a color
-@otherSections: #fff;
-@linkColorsPatEdu: red;
-
-/*Fonts*/
-@topNavFont: 'Arial', sans-serif;
-@mainFont: 'Open Sans', sans-serif;
-@taglineFont: 'Times New Roman', Times, serif;
-/*
-& when (@myVariable = 'value1'), (@myVariable = 'value2') {
-    background: red;
-}*/
-
-// Text color mixins 
-// Send message btn on contact form
-.colorTransformBW(@a) when (lightness(@a) >= 50%){
-  color: black;
-  border-color: black;
-}
-.colorTransformBW(@a) when (lightness(@a) < 50%)  {
-  color: white;
-  border-color: white;
-}
-
-.smart-hover-color (@a) when (lightness(@a) >= 50%) {
-  color: darken(@a, 40%);
-}
-.smart-hover-color (@a) when (lightness(@a) < 50%) {
-  color: lighten(@a, 40%);
-}
-
-//not being used 
-.smart-hover-color-bg (@a) when (lightness(@a) >= 50%) {
-  color: darken(@a, 10%);
-  background-color: darken(@a,10%);
-}
-.smart-hover-color-bg (@a) when (lightness(@a) < 50%) {
-  color: lighten(@a, 10%);
-  background-color: lighten(@a, 10%);
-}
+@import 'variables.less'; 
+@import 'mixin.less';
 
 /* navigation */
 .width1200{
@@ -61,7 +12,6 @@
   height:180px; 
   background: @mainNavFooter;
   font-family: @topNavFont;
-  color: @mainNavFooterTxt;
   .colorTransformBW(@mainNavFooter);
   
 }
@@ -78,7 +28,6 @@
 
 #navLogo .fas {
   font-size: 100px;
-  color: @mainNavFooterTxt;
   .colorTransformBW(@mainNavFooter);
 }
 #headingTxt {
@@ -118,7 +67,6 @@
   height: 40px;
   min-height:40px !important;
   background-color: @bottomNav; /* Light Theme Color 2 */
-  color: @bottomTxt;
   border-radius:0 !important;
   margin-bottom:0 !important;
   box-shadow: 0 5px 30px grey;
@@ -267,7 +215,7 @@ width: 100%;
 /* Tagline section under hero img*/
 #tagline_section {
   background-color: @mainNavFooter;
-  color: @mainNavFooterTxt;
+  
   font-family: @taglineFont; 
   .colorTransformBW(@mainNavFooter);
   //float: left;
@@ -589,7 +537,6 @@ width: 100%;
 footer {
   width:100%;
   background-color: @mainNavFooter;
-  color: @mainNavFooterTxt;
   font-family: @mainNavFooterTxt;
   font-size:14px;
   padding:40px 0 30px;
@@ -600,7 +547,6 @@ footer ul {
   margin:0;
 }
 footer a {
-  color: @mainNavFooterTxt;
   .colorTransformBW(@mainNavFooter);
 }
 

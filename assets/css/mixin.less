@@ -1,0 +1,27 @@
+// Text color mixins that determines text color depending on background color
+.colorTransformBW(@a) when (lightness(@a) >= 50%){
+  color: black;
+  border-color: black;
+}
+.colorTransformBW(@a) when (lightness(@a) < 50%)  {
+  color: white;
+  border-color: white;
+}
+
+//smart hover control
+.smart-hover-color (@a) when (lightness(@a) >= 50%) {
+  color: darken(@a, 40%);
+}
+.smart-hover-color (@a) when (lightness(@a) < 50%) {
+  color: lighten(@a, 40%);
+}
+
+//smart hovers with background
+.smart-hover-color-bg (@a) when (lightness(@a) >= 50%) {
+  color: darken(@a, 10%);
+  background-color: darken(@a,10%);
+}
+.smart-hover-color-bg (@a) when (lightness(@a) < 50%) {
+  color: lighten(@a, 10%);
+  background-color: lighten(@a, 10%);
+}
