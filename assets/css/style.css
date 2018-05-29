@@ -107,7 +107,7 @@
   border-color: black;
 }
 .navbar a:hover {
-  color: #737373;
+  color: #404040;
 }
 .mainNav {
   display: block;
@@ -250,7 +250,7 @@ h2 {
   color: #000;
 }
 .showMorePage a:hover {
-  color: #cccccc;
+  color: #999999;
 }
 /* About section */
 #aboutContent {
@@ -306,7 +306,7 @@ h2 {
 #lessIns-trig:hover {
   text-decoration: underline;
   cursor: pointer;
-  color: #737373;
+  color: #404040;
 }
 .accordion-list {
   padding-left: 0;
@@ -380,7 +380,7 @@ h2 {
 #lessContent-trig:hover {
   cursor: pointer;
   text-decoration: underline;
-  color: #737373;
+  color: #404040;
 }
 /* -------------- location section -------------- */
 #locationContent {
@@ -569,13 +569,13 @@ footer a:hover {
     z-index: 100;
   }
   .navbar .glyphicon:hover {
-    color: #737373;
+    color: #404040;
   }
   .navmenuTitle:hover {
-    color: #737373;
+    color: #404040;
   }
   .navbar .glyphicon-menu-hamburger:hover {
-    color: #737373;
+    color: #404040;
     cursor: pointer;
   }
   .mainNav {
@@ -594,7 +594,7 @@ footer a:hover {
     z-index: 100;
   }
   .navmenuTitle:hover {
-    color: #737373;
+    color: #404040;
     cursor: pointer;
   }
   #navDropdown {
@@ -648,7 +648,7 @@ footer a:hover {
   }
   .btnMenu:hover {
     /* border:3px solid #4d4d4d; Darker Theme Color 02 (default)*/
-    color: #737373;
+    color: #404040;
   }
   .btnHome {
     width: 40px;
