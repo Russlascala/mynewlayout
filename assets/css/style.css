@@ -100,7 +100,7 @@
   border-color: black;
 }
 .navbar a:hover {
-  color: #404040;
+  color: #666666;
 }
 .mainNav {
   display: block;
@@ -308,7 +308,7 @@ h2 {
 #lessIns-trig:hover {
   text-decoration: underline;
   cursor: pointer;
-  color: #404040;
+  color: #666666;
 }
 .accordion-list {
   padding-left: 0;
@@ -382,7 +382,7 @@ h2 {
 #lessContent-trig:hover {
   cursor: pointer;
   text-decoration: underline;
-  color: #404040;
+  color: #666666;
 }
 /* -------------- location section -------------- */
 #locationContent {
@@ -485,7 +485,7 @@ footer a {
   border-color: white;
 }
 footer a:hover {
-  color: #cccccc;
+  color: #164666;
 }
 .footnote {
   text-align: center;
@@ -625,7 +625,8 @@ footer a:hover {
     background-color: #a6a6a6;
   }
   #navDropdown a {
-    color: #000;
+    color: black;
+    border-color: black;
   }
   .stickyDrop {
     position: fixed;
@@ -902,7 +903,7 @@ footer a:hover {
     font-size: 16px;
   }
   #phoneNums {
-    margin-top: 0px;
+    margin-top: 25px;
   }
   #navPhone {
     font-size: 13px;

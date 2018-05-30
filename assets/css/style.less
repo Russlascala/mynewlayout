@@ -104,7 +104,7 @@
     .colorTransformBW(@bottomNav);
   }
  .navbar a:hover {
-    .smart-hover-color(@bottomNav);
+    .smart-hover-color(@altSecBColor);
   }
   .mainNav {
     display:block;
@@ -351,7 +351,7 @@ width: 100%;
 #moreIns-trig:hover, #lessIns-trig:hover {
   text-decoration: underline;
   cursor: pointer;
-  .smart-hover-color(@bottomNav);
+  .smart-hover-color(@altSecBColor);
 }
 
 .accordion-list {
@@ -435,7 +435,7 @@ width: 100%;
 #moreContent-trig:hover, #lessContent-trig:hover {
   cursor: pointer;
   text-decoration: underline;
-  .smart-hover-color(@bottomNav);
+  .smart-hover-color(@altSecBColor);
 }
 
 /* -------------- location section -------------- */
@@ -551,7 +551,7 @@ footer a {
 }
 
 footer a:hover{
-  color: darken(@mainNavFooterTxt,20%);
+  color: darken(@mainNavFooter,20%);
 }
 
 
@@ -716,7 +716,7 @@ footer a:hover{
   }
 
   #navDropdown a {
-    color:#000;
+    .colorTransformBW(@bottomNav);
   }
   .stickyDrop {
     position:fixed;
@@ -1068,7 +1068,7 @@ footer a:hover{
   }
 
   #phoneNums{
-    margin-top:0px
+    margin-top: 25px;
   }
 
   #navPhone{
