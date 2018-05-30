@@ -8,6 +8,16 @@
   border-color: white;
 }
 
+.colorTransformBW-bg(@a) when (lightness(@a) >= 50%){
+  color: black;
+  background-color: black;
+}
+.colorTransformBW-bg(@a) when (lightness(@a) < 50%)  {
+  color: white;
+  background-color: white;
+}
+
+
 //smart hover control
 .smart-hover-color (@a) when (lightness(@a) >= 50%) {
   color: darken(@a, 40%);
