@@ -61,7 +61,6 @@
   height: 40px;
   min-height: 40px !important;
   background-color: #a6a6a6;
-  /* MAIN Theme Color */
   border-radius: 0 !important;
   margin-bottom: 0 !important;
   z-index: 100;
@@ -90,7 +89,19 @@
   left: -10px;
   margin: 0;
   max-height: 393px;
-  overflow: scroll;
+  height: auto;
+  overflow-x: hidden;
+}
+nav::-webkit-scrollbar {
+  width: 1em;
+}
+nav::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+  box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+}
+nav::-webkit-scrollbar-thumb {
+  background-color: darkgrey;
+  outline: 1px solid slategrey;
 }
 .dropdown-menu > li::after {
   content: none;
@@ -103,7 +114,7 @@
   display: none;
 }
 .navbar-nav {
-  margin: 0 -15px;
+  margin: 0;
 }
 .navbar-collapse {
   padding-left: 0;
@@ -123,6 +134,9 @@
 .navbar-inverse .navbar-nav > .active > a:focus,
 .navbar-inverse .navbar-nav > .active > a:hover {
   background-color: inherit;
+}
+.navbar-inverse .navbar-nav .open .dropdown-menu > li > a {
+  color: inherit;
 }
 .navbar-inverse .navbar-toggle {
   color: black;
@@ -162,6 +176,12 @@
 .dropdown-menu > li > a:focus,
 .dropdown-menu > li > a {
   color: inherit;
+}
+.navbar-inverse .navbar-nav > .open > a,
+.navbar-inverse .navbar-nav > .open > a:focus,
+.navbar-inverse .navbar-nav > .open > a:hover {
+  color: inherit;
+  background-color: inherit;
 }
 .dropdown-menu > li > a {
   padding: 0 20px;
@@ -215,7 +235,6 @@
   background-color: #fff;
 }
 .alt-content-b {
-  /*.alt-Content-B-Color(@bottomNav);*/
   background-color: #cccccc;
   color: black;
   border-color: black;
@@ -250,8 +269,8 @@ h2 {
 #aboutContent {
   padding-left: 60px;
   padding-right: 60px;
-  margin-top: 50px;
-  margin-bottom: 50px;
+  padding-top: 50px;
+  padding-bottom: 50px;
   max-width: 100%;
   width: 100%;
 }
@@ -310,8 +329,8 @@ h2 {
 #offPolContent {
   padding-left: 60px;
   padding-right: 60px;
-  margin-top: 50px;
-  margin-bottom: 50px;
+  padding-top: 50px;
+  padding-bottom: 50px;
   max-width: 100%;
 }
 #cards {
@@ -380,8 +399,8 @@ h2 {
 #locationContent {
   padding-left: 60px;
   padding-right: 60px;
-  margin-top: 50px;
-  margin-bottom: 50px;
+  padding-top: 50px;
+  padding-bottom: 50px;
   max-width: 100%;
 }
 #locationContent p {
@@ -410,14 +429,11 @@ h2 {
 #simpleContact {
   padding-left: 60px;
   padding-right: 60px;
-  margin-top: 0px;
-  margin-bottom: 0px;
+  padding-top: 50px;
+  padding-bottom: 50px;
   max-width: 100%;
   /*background-color: lighten(@bottomNav,20%); 
   .colorTransformBW(@bottomNav);*/
-}
-#simpleContact h2 {
-  padding-top: 50px;
 }
 #phiContainer {
   background-color: #fff;
@@ -448,7 +464,7 @@ h2 {
   color: white;
   border-color: white;
   /*.colorTransformBW(lighten(@mainNavFooter,30%));*/
-  margin: 20px auto 50px;
+  margin: 5px auto 0px;
   display: block;
 }
 #sendMsg:hover {
@@ -523,33 +539,28 @@ footer a:hover {
     display: inline-block;
   }
   .sub-menu li a {
-    padding-top: 2px;
-    padding-bottom: 2px;
+    padding-top: 10px;
+    padding-bottom: 10px;
   }
   .sub-menu li a:hover {
     text-decoration: underline;
+  }
+  /* Hover for dropdowns on desktop screens */
+  .dropdown:hover .dropdown-menu {
+    display: block;
+    margin-top: 0;
+  }
+  /* Navigation to the page for the dropdown, not needed on desktop 
+bc hover drops down and the click brings you to the page */
+  .dropdownAllForTouchScreen {
+    display: none;
   }
   /* main content after nav for desktop screens*/
   .mainContent {
     margin-top: 0px;
   }
-  /* about content desktop*/
-  #aboutContent {
-    padding-left: 60px;
-    padding-right: 60px;
-  }
-  /*office policies section desktop*/
-  #offPolContent {
-    padding-left: 60px;
-    padding-right: 60px;
-  }
   #buttons {
     margin-top: 40px;
-  }
-  /*locations section desktop*/
-  #locationContent {
-    padding-left: 60px;
-    padding-right: 60px;
   }
   /* Contact section desktop*/
   #simpleContact {
@@ -733,6 +744,13 @@ footer a:hover {
 /* Landscape Mobile */
 /*_______________________--------------------------------__________________________*/
 @media (max-width: 767px) {
+  .navbar-nav .open .dropdown-menu .dropdown-header,
+  .navbar-nav .open .dropdown-menu > li > a {
+    padding: 0px 10px 0px 10px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
   #practiceTxt {
     font-size: 25px;
     padding-top: -30px;
@@ -744,6 +762,7 @@ footer a:hover {
     padding: 0px;
     margin-top: 20px;
     margin-bottom: 5px;
+    margin-right: 10px;
   }
   /* === Navigation === */
   .navmenuTitle {
@@ -770,6 +789,9 @@ footer a:hover {
 /*_______________________--------------------------------__________________________*/
 /* Midsize Responsive Troubleshooting */
 @media (max-width: 639px) {
+  .dropdown-menu {
+    max-height: 250px;
+  }
   #practicelogo {
     height: 90px;
   }

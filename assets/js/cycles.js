@@ -1,5 +1,6 @@
-
 /* https://github.com/fuzzywalrus/Bootstrap---JQuery-Cycle--Responsive-Slide-Show-.git */
+
+/* Responsive Cycle for the images */
 $(document).ready(function () {
     //JQuery Cycle code
     $('#slideshow').after('<ul id="pager">').cycle({
@@ -14,11 +15,9 @@ $(document).ready(function () {
             return '<li><a href="cpage_7#"></a></li>';
         }
     });
-
-
 });
 
-
+/* Responsive Cycle for the text */
 $(document).ready(function () {
     //JQuery Cycle code
     $('.tagTxt').after('<ul id="pager">').cycle({
