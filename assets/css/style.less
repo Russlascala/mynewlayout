@@ -255,8 +255,10 @@ width: 100%;
   background-color: @otherSections;
 }
 .alt-content-b {
-  background-color: lighten(@bottomNav,15%); 
-  .colorTransformBW(@bottomNav);
+  background-color: @altSecBColor;
+  //background-color: lighten(@bottomNav,15%); 
+  //.colorTransformBW(@bottomNav);
+  .colorTransformBW(@altSecBColor);
 }
 
 /*headings for the different sections */
