@@ -480,9 +480,9 @@ h2 {
 }
 #sendMsg:hover {
   cursor: pointer;
-  background-color: #94c6e7;
-  color: white;
-  border-color: white;
+  background-color: #6ab0de;
+  color: black;
+  border-color: black;
   /*border-color: @mainNavFooterTxt;
   .colorTransformBW(@mainNavFooterTxt);*/
 }
