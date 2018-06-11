@@ -124,10 +124,10 @@ nav::-webkit-scrollbar-thumb {
 .navbar-inverse {
   border: 0;
 }
-.navbar-inverse .navbar-nav > li > a {
-  color: black;
-  border-color: black;
-}
+/*   .navbar-inverse .navbar-nav>li>a {
+    //color:inherit;
+    .colorTransformBW(@bottomNav);
+  } */
 .navbar-inverse .navbar-collapse,
 .navbar-inverse .navbar-form {
   border: 0;
@@ -137,9 +137,10 @@ nav::-webkit-scrollbar-thumb {
 .navbar-inverse .navbar-nav > .active > a:hover {
   background-color: inherit;
 }
-.navbar-inverse .navbar-nav .open .dropdown-menu > li > a {
-  color: inherit;
-}
+/*
+  .navbar-inverse .navbar-nav .open .dropdown-menu>li>a {
+    //color: inherit;
+  }*/
 .navbar-inverse .navbar-toggle {
   color: black;
   border-color: black;
@@ -288,9 +289,6 @@ h2 {
 #accordIns {
   text-align: center;
 }
-.txtDefault_byState ul {
-  margin: 0 auto;
-}
 .accordContent {
   padding-left: 60px;
   padding-right: 60px;
@@ -301,16 +299,11 @@ h2 {
 #accordIns h2 {
   text-align: left;
 }
-#accordIns {
-  margin: 0 auto;
-}
 #accordIns li {
-  /*list-style-position: inside;
-  text-align: center;*/
   text-align: left;
-}
-.accordList {
-  padding-left: 50px;
+  list-style-type: disc;
+  list-style-position: inside;
+  text-indent: -1.4em;
 }
 .fullInsurance {
   /*font-family:'Open Sans', sans-serif;*/
@@ -374,11 +367,13 @@ h2 {
   text-align: left;
 }
 #accordEdu li {
-  list-style-position: inside;
   text-align: left;
   cursor: pointer;
   text-decoration: underline;
   color: red;
+  list-style-type: disc;
+  list-style-position: inside;
+  text-indent: -1.4em;
 }
 #accordEdu li a {
   color: red;
@@ -538,6 +533,10 @@ footer a:hover {
 /* media query for desktop viewport targets screen size with a minimum width of 1200px */
 /*_______________________--------------------------------__________________________*/
 @media (min-width: 1200px) {
+  .navbar-inverse .navbar-nav > li > a {
+    color: black;
+    border-color: black;
+  }
   .navbar {
     padding-top: 10px;
   }
@@ -569,6 +568,10 @@ bc hover drops down and the click brings you to the page */
   .dropdownAllForTouchScreen {
     display: none;
   }
+  /* main content after nav for desktop screens*/
+  .mainContent {
+    margin-top: 0px;
+  }
   #buttons {
     margin-top: 40px;
   }
@@ -589,6 +592,10 @@ bc hover drops down and the click brings you to the page */
 /* Landscape Tablet */
 /*_______________________--------------------------------__________________________*/
 @media (max-width: 1199px) {
+  .navbar-inverse .navbar-nav > li > a {
+    color: black;
+    border-color: black;
+  }
   .container-fluid > .navbar-collapse,
   .container-fluid > .navbar-header,
   .container > .navbar-collapse,

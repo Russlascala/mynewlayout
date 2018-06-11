@@ -136,20 +136,20 @@ nav::-webkit-scrollbar-thumb {
 .navbar-inverse {
   border:0;
 }
-  .navbar-inverse .navbar-nav>li>a {
+/*   .navbar-inverse .navbar-nav>li>a {
     //color:inherit;
-   .colorTransformBW(@altSecBColor);
-  }
+    .colorTransformBW(@bottomNav);
+  } */
   .navbar-inverse .navbar-collapse, .navbar-inverse .navbar-form {
     border:0;
   }
   .navbar-inverse .navbar-nav>.active>a, .navbar-inverse .navbar-nav>.active>a:focus, .navbar-inverse .navbar-nav>.active>a:hover {
     background-color:inherit;
   }
-
+/*
   .navbar-inverse .navbar-nav .open .dropdown-menu>li>a {
-    color: inherit;
-  }
+    //color: inherit;
+  }*/
   .navbar-inverse .navbar-toggle {
     .colorTransformBW(@bottomNav);
   }
@@ -319,12 +319,6 @@ width: 100%;
   text-align: center;
 }
 
-.txtDefault_byState ul{
-  margin: 0 auto;
-}
-
-
-
 .accordContent {
   padding-left: 60px;
   padding-right: 60px;
@@ -338,18 +332,12 @@ width: 100%;
   
 }
 
-#accordIns {
-  margin: 0 auto;
-}
-
 #accordIns li {
-  /*list-style-position: inside;
-  text-align: center;*/
+  list-style-position: inside;
   text-align: left;
-}
-
-.accordList{
-  padding-left: 50px;
+  list-style-type: disc;
+  list-style-position: inside;
+  text-indent: -1.4em;
 }
 
 .fullInsurance {
@@ -427,6 +415,9 @@ width: 100%;
   cursor: pointer;
   text-decoration: underline;
   color: @linkColorsPatEdu;
+  list-style-type: disc;
+  list-style-position: inside;
+  text-indent: -1.4em;
 }
 #accordEdu li a {
   color:@linkColorsPatEdu;
@@ -573,7 +564,6 @@ footer a:hover{
 }
 
 
-
 .footnote {
   text-align:center;
   font-size:10px;
@@ -609,6 +599,11 @@ footer a:hover{
 
 @media (min-width: 1200px) {
 
+    .navbar-inverse .navbar-nav>li>a {
+    //color:inherit;
+    .colorTransformBW(@bottomNav);
+  }
+
 
   .navbar {
     padding-top: 10px;
@@ -643,6 +638,13 @@ bc hover drops down and the click brings you to the page */
     display: none;
   }
 
+
+  /* main content after nav for desktop screens*/
+  .mainContent {
+    margin-top: 0px;
+  }
+
+
   #buttons{
     margin-top:40px;
   }
@@ -668,6 +670,11 @@ bc hover drops down and the click brings you to the page */
 /* Landscape Tablet */
 /*_______________________--------------------------------__________________________*/
 @media (max-width: 1199px) {
+
+    .navbar-inverse .navbar-nav>li>a {
+    //color:inherit;
+    .colorTransformBW(@altSecBColor);
+  }
 
 .container-fluid>.navbar-collapse, .container-fluid>.navbar-header, .container>.navbar-collapse, .container>.navbar-header {
     margin-left:-15px;
@@ -785,6 +792,7 @@ bc hover drops down and the click brings you to the page */
   .nav>li>a {
     text-align:center;
     float:none;
+    
   }
 
   /* Office policies mobile*/
