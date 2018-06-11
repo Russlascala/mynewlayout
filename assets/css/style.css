@@ -125,7 +125,8 @@ nav::-webkit-scrollbar-thumb {
   border: 0;
 }
 .navbar-inverse .navbar-nav > li > a {
-  color: inherit;
+  color: black;
+  border-color: black;
 }
 .navbar-inverse .navbar-collapse,
 .navbar-inverse .navbar-form {
@@ -176,7 +177,8 @@ nav::-webkit-scrollbar-thumb {
 }
 .dropdown-menu > li > a:focus,
 .dropdown-menu > li > a {
-  color: inherit;
+  color: black;
+  border-color: black;
 }
 .navbar-inverse .navbar-nav > .open > a,
 .navbar-inverse .navbar-nav > .open > a:focus,
@@ -504,7 +506,7 @@ footer a {
   border-color: white;
 }
 footer a:hover {
-  color: #164666;
+  color: #bedcf0;
 }
 .footnote {
   text-align: center;
@@ -555,6 +557,7 @@ footer a:hover {
   }
   .sub-menu li a:hover {
     text-decoration: underline;
+    color: #666666;
   }
   /* Hover for dropdowns on desktop screens */
   .dropdown:hover .dropdown-menu {
