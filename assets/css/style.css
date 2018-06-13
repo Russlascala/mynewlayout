@@ -1,5 +1,84 @@
 /* Theme Colors two main colors and text colors*/
 /*Fonts for top nav, main content, and taglines*/
+.wrapper {
+  width: 100%;
+  background-color: #f7f7f7;
+  float: left;
+}
+/* === Side Menu | Functional === */
+.sidemenuFunction {
+  position: fixed;
+  height: 432px;
+  margin-top: 7px;
+  z-index: 100;
+}
+#topmenuItem {
+  display: none;
+}
+.sidebtnAppt {
+  width: 21px;
+  height: 120px;
+  background: url(https://s3.amazonaws.com/drleonardo.com.dev.misc/new_provider_site/sidebtn_tabAppt.jpg);
+  -webkit-transition: width 0s, height 0s;
+  /* For Safari 3.1 to 6.0 */
+  transition: width 0s, height 0s;
+}
+.sidebtnAppt:hover {
+  width: 120px;
+  height: 120px;
+  background: url(https://s3.amazonaws.com/drleonardo.com.dev.misc/new_provider_site/sidebtn_iconAppt.png);
+  -webkit-transition: width 0.4s, height 0.4s;
+  /* For Safari 3.1 to 6.0 */
+  transition: width 0.4s, height 0.4s;
+}
+.sidebtnPortal {
+  width: 21px;
+  height: 120px;
+  background: url(https://s3.amazonaws.com/drleonardo.com.dev.misc/new_provider_site/sidebtn_tabPortal.jpg);
+  -webkit-transition: width 0s, height 0s;
+  /* For Safari 3.1 to 6.0 */
+  transition: width 0s, height 0s;
+}
+.sidebtnPortal:hover {
+  width: 120px;
+  height: 120px;
+  background: url(https://s3.amazonaws.com/drleonardo.com.dev.misc/new_provider_site/sidebtn_iconPortal.png);
+  -webkit-transition: width 0.4s, height 0.4s;
+  /* For Safari 3.1 to 6.0 */
+  transition: width 0.4s, height 0.4s;
+}
+.sidebtnContact {
+  width: 21px;
+  height: 120px;
+  background: url(https://s3.amazonaws.com/drleonardo.com.dev.misc/new_provider_site/sidebtn_tabContact.jpg);
+  -webkit-transition: width 0s, height 0s;
+  /* For Safari 3.1 to 6.0 */
+  transition: width 0s, height 0s;
+}
+.sidebtnContact:hover {
+  width: 120px;
+  height: 120px;
+  background: url(https://s3.amazonaws.com/drleonardo.com.dev.misc/new_provider_site/sidebtn_iconContact.png);
+  -webkit-transition: width 0.4s, height 0.4s;
+  /* For Safari 3.1 to 6.0 */
+  transition: width 0.4s, height 0.4s;
+}
+.sidebtnVcard {
+  width: 21px;
+  height: 120px;
+  background: url(https://s3.amazonaws.com/drleonardo.com.dev.misc/new_provider_site/sidebtn_tabVcard.jpg);
+  -webkit-transition: width 0s, height 0s;
+  /* For Safari 3.1 to 6.0 */
+  transition: width 0s, height 0s;
+}
+.sidebtnVcard:hover {
+  width: 120px;
+  height: 120px;
+  background: url(https://s3.amazonaws.com/drleonardo.com.dev.misc/new_provider_site/sidebtn_iconVcard.png);
+  -webkit-transition: width 0.4s, height 0.4s;
+  /* For Safari 3.1 to 6.0 */
+  transition: width 0.4s, height 0.4s;
+}
 /* navigation */
 .width1200 {
   max-width: 1200px;
@@ -592,6 +671,81 @@ bc hover drops down and the click brings you to the page */
 /* Landscape Tablet */
 /*_______________________--------------------------------__________________________*/
 @media (max-width: 1199px) {
+  /* === Side (Top) Menu | Functional === */
+  .sidemenuFunction {
+    width: 100%;
+    max-width: 1199px;
+    height: 34px;
+    position: relative;
+    margin: 0 auto;
+    border: 1px solid #333;
+    display: none;
+  }
+  .sidebtnAppt,
+  .sidebtnAppt:hover {
+    width: 25%;
+    height: 32px;
+    background: #f0182f;
+    float: left;
+  }
+  .sidebtnPortal,
+  .sidebtnPortal:hover {
+    width: 25%;
+    height: 32px;
+    background: #008ec6;
+    float: left;
+  }
+  .sidebtnContact,
+  .sidebtnContact:hover {
+    width: 25%;
+    height: 32px;
+    background: #00b04f;
+    float: left;
+  }
+  .sidebtnVcard,
+  .sidebtnVcard:hover {
+    width: 25%;
+    height: 32px;
+    background: #d97d21;
+    float: left;
+  }
+  #topmenuItem {
+    display: block;
+    color: #fff;
+    text-align: center;
+    padding-top: 6px;
+  }
+  .sidemenuFunction .glyphicon {
+    top: 0;
+  }
+  .sidemenuFunction .topmenuAppt::after {
+    content: " Book Appointment";
+    font-family: 'Open Sans', sans-serif;
+    font-size: 14px;
+    font-weight: 700;
+    padding-left: 4px;
+  }
+  .sidemenuFunction .topmenuPortal::after {
+    content: " Patient Portal";
+    font-family: 'Open Sans', sans-serif;
+    font-size: 14px;
+    font-weight: 700;
+    padding-left: 4px;
+  }
+  .sidemenuFunction .topmenuContact::after {
+    content: " Contact";
+    font-family: 'Open Sans', sans-serif;
+    font-size: 14px;
+    font-weight: 700;
+    padding-left: 4px;
+  }
+  .sidemenuFunction .topmenuVcard::after {
+    content: " Download Contact";
+    font-family: 'Open Sans', sans-serif;
+    font-size: 14px;
+    font-weight: 700;
+    padding-left: 4px;
+  }
   .navbar-inverse .navbar-nav > li > a {
     color: black;
     border-color: black;
